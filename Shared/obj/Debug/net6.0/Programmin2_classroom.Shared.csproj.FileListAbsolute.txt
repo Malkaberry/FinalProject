@@ -10,3 +10,15 @@
 /Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/Shared/obj/Debug/net6.0/refint/Programmin2_classroom.Shared.dll
 /Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/Shared/obj/Debug/net6.0/Programmin2_classroom.Shared.pdb
 /Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/Shared/obj/Debug/net6.0/ref/Programmin2_classroom.Shared.dll
+/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Shared/bin/Debug/net6.0/Programmin2_classroom.Shared.deps.json
+/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Shared/bin/Debug/net6.0/Programmin2_classroom.Shared.dll
+/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Shared/bin/Debug/net6.0/Programmin2_classroom.Shared.pdb
+/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Shared/obj/Debug/net6.0/Programmin2_classroom.Shared.csproj.AssemblyReference.cache
+/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Shared/obj/Debug/net6.0/Programmin2_classroom.Shared.GeneratedMSBuildEditorConfig.editorconfig
+/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Shared/obj/Debug/net6.0/Programmin2_classroom.Shared.AssemblyInfoInputs.cache
+/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Shared/obj/Debug/net6.0/Programmin2_classroom.Shared.AssemblyInfo.cs
+/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Shared/obj/Debug/net6.0/Programmin2_classroom.Shared.csproj.CoreCompileInputs.cache
+/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Shared/obj/Debug/net6.0/Programmin2_classroom.Shared.dll
+/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Shared/obj/Debug/net6.0/refint/Programmin2_classroom.Shared.dll
+/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Shared/obj/Debug/net6.0/Programmin2_classroom.Shared.pdb
+/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Shared/obj/Debug/net6.0/ref/Programmin2_classroom.Shared.dll

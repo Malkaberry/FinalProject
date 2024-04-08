@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/Client/Programmin2_classroom.Client.csproj": {}
+    "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/Programmin2_classroom.Client.csproj": {}
   },
   "projects": {
-    "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/Client/Programmin2_classroom.Client.csproj": {
+    "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/Programmin2_classroom.Client.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/Client/Programmin2_classroom.Client.csproj",
+        "projectUniqueName": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/Programmin2_classroom.Client.csproj",
         "projectName": "Programmin2_classroom.Client",
-        "projectPath": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/Client/Programmin2_classroom.Client.csproj",
+        "projectPath": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/Programmin2_classroom.Client.csproj",
         "packagesPath": "/Users/malkaberry/.nuget/packages/",
-        "outputPath": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/Client/obj/",
+        "outputPath": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/malkaberry/.nuget/NuGet/NuGet.Config"
@@ -26,8 +26,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/Shared/Programmin2_classroom.Shared.csproj": {
-                "projectPath": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/Shared/Programmin2_classroom.Shared.csproj"
+              "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Shared/Programmin2_classroom.Shared.csproj": {
+                "projectPath": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Shared/Programmin2_classroom.Shared.csproj"
               }
             }
           }
@@ -77,14 +77,14 @@
         }
       }
     },
-    "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/Shared/Programmin2_classroom.Shared.csproj": {
+    "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Shared/Programmin2_classroom.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/Shared/Programmin2_classroom.Shared.csproj",
+        "projectUniqueName": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Shared/Programmin2_classroom.Shared.csproj",
         "projectName": "Programmin2_classroom.Shared",
-        "projectPath": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/Shared/Programmin2_classroom.Shared.csproj",
+        "projectPath": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Shared/Programmin2_classroom.Shared.csproj",
         "packagesPath": "/Users/malkaberry/.nuget/packages/",
-        "outputPath": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/Shared/obj/",
+        "outputPath": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Shared/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/malkaberry/.nuget/NuGet/NuGet.Config"
@@ -114,6 +114,10 @@
             "Dapper": {
               "target": "Package",
               "version": "[2.1.35, )"
+            },
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[8.3.0, )"
             }
           },
           "imports": [

@@ -11,33 +11,33 @@ build_property.EnableTrimAnalyzer = true
 build_property.IncludeAllContentForSelfExtract = 
 build_property.RootNamespace = Programmin2_classroom.Client
 build_property.RootNamespace = Programmin2_classroom.Client
-build_property.ProjectDir = /Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/Client/
+build_property.ProjectDir = /Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/Client
+build_property.MSBuildProjectDirectory = /Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client
 build_property._RazorSourceGeneratorDebug = 
 
-[/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/Client/App.razor]
+[/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/Client/Pages/Index.razor]
+[/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/Client/Shared/SurveyPrompt.razor]
+[/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/Shared/SurveyPrompt.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL1N1cnZleVByb21wdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/Client/_Imports.razor]
+[/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/Client/Shared/MainLayout.razor]
+[/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL01haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-ch8braqjgx
 
-[/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/Client/Shared/NavMenu.razor]
+[/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/Shared/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL05hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-jv44axlws1

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UBwSRDQIG80VL+Gp3rIrmjZuC5C5mC8PD9o6AoFy7UWD/vGj45UE4GLJVv8GckyCl8gLHSp2LX1peoaHzdxMnQ==",
+  "dgSpecHash": "EyyctImyuRXKQNy04ZR2MzqG8/JyOMcB2pL5x8Qocs7qLUyyNWDk3GdLK1Y4kFNtLiTURcYZUlq+mNkMoSmhAQ==",
   "success": true,
-  "projectFilePath": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/Shared/Programmin2_classroom.Shared.csproj",
+  "projectFilePath": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Shared/Programmin2_classroom.Shared.csproj",
   "expectedPackageFiles": [
     "/Users/malkaberry/.nuget/packages/bouncycastle.cryptography/2.2.1/bouncycastle.cryptography.2.2.1.nupkg.sha512",
     "/Users/malkaberry/.nuget/packages/dapper/2.1.35/dapper.2.1.35.nupkg.sha512",

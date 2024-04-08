@@ -8,13 +8,13 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Programmin2_classroom.Server
 build_property.RootNamespace = Programmin2_classroom.Server
-build_property.ProjectDir = /Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/Server/
+build_property.ProjectDir = /Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Server/
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/Server
+build_property.MSBuildProjectDirectory = /Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Server
 build_property._RazorSourceGeneratorDebug = 
 
-[/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/Server/Pages/Error.cshtml]
+[/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Server/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
