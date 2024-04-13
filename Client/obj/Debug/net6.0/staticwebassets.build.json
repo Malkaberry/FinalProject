@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "1w19g4kRJWwysCsF+1pxsF/SIRj5RPzLeipVbVT1lcA=",
+  "Hash": "lMzpEd3GQtjWgVaB00mspAdvDgC4amHJDtvGPt6WPI0=",
   "Source": "Programmin2_classroom.Client",
   "BasePath": "/",
   "Mode": "Root",
@@ -49,23 +49,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/malkaberry/.nuget/packages/microsoft.aspnetcore.components.webassembly/6.0.7/build/net6.0/blazor.webassembly.js"
-    },
-    {
-      "Identity": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/_framework/BouncyCastle.Cryptography.dll",
-      "SourceId": "Programmin2_classroom.Client",
-      "SourceType": "Computed",
-      "ContentRoot": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/",
-      "BasePath": "/",
-      "RelativePath": "_framework/BouncyCastle.Cryptography.dll",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "BlazorWebAssemblyResource",
-      "AssetTraitValue": "runtime",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "/Users/malkaberry/.nuget/packages/bouncycastle.cryptography/2.2.1/lib/net6.0/BouncyCastle.Cryptography.dll"
     },
     {
       "Identity": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/_framework/Dapper.dll",
@@ -136,23 +119,6 @@
       "OriginalItemSpec": "/usr/local/share/dotnet/packs/Microsoft.NETCore.App.Runtime.Mono.browser-wasm/6.0.10/runtimes/browser-wasm/native/dotnet.wasm"
     },
     {
-      "Identity": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/_framework/Google.Protobuf.dll",
-      "SourceId": "Programmin2_classroom.Client",
-      "SourceType": "Computed",
-      "ContentRoot": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/",
-      "BasePath": "/",
-      "RelativePath": "_framework/Google.Protobuf.dll",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "BlazorWebAssemblyResource",
-      "AssetTraitValue": "runtime",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "/Users/malkaberry/.nuget/packages/google.protobuf/3.25.1/lib/net5.0/Google.Protobuf.dll"
-    },
-    {
       "Identity": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/_framework/icudt_CJK.dat",
       "SourceId": "Programmin2_classroom.Client",
       "SourceType": "Computed",
@@ -219,57 +185,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "/usr/local/share/dotnet/packs/Microsoft.NETCore.App.Runtime.Mono.browser-wasm/6.0.10/runtimes/browser-wasm/native/icudt.dat"
-    },
-    {
-      "Identity": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/_framework/K4os.Compression.LZ4.dll",
-      "SourceId": "Programmin2_classroom.Client",
-      "SourceType": "Computed",
-      "ContentRoot": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/",
-      "BasePath": "/",
-      "RelativePath": "_framework/K4os.Compression.LZ4.dll",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "BlazorWebAssemblyResource",
-      "AssetTraitValue": "runtime",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "/Users/malkaberry/.nuget/packages/k4os.compression.lz4/1.3.5/lib/net6.0/K4os.Compression.LZ4.dll"
-    },
-    {
-      "Identity": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/_framework/K4os.Compression.LZ4.Streams.dll",
-      "SourceId": "Programmin2_classroom.Client",
-      "SourceType": "Computed",
-      "ContentRoot": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/",
-      "BasePath": "/",
-      "RelativePath": "_framework/K4os.Compression.LZ4.Streams.dll",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "BlazorWebAssemblyResource",
-      "AssetTraitValue": "runtime",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "/Users/malkaberry/.nuget/packages/k4os.compression.lz4.streams/1.3.5/lib/net6.0/K4os.Compression.LZ4.Streams.dll"
-    },
-    {
-      "Identity": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/_framework/K4os.Hash.xxHash.dll",
-      "SourceId": "Programmin2_classroom.Client",
-      "SourceType": "Computed",
-      "ContentRoot": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/",
-      "BasePath": "/",
-      "RelativePath": "_framework/K4os.Hash.xxHash.dll",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "BlazorWebAssemblyResource",
-      "AssetTraitValue": "runtime",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "/Users/malkaberry/.nuget/packages/k4os.hash.xxhash/1.0.8/lib/net6.0/K4os.Hash.xxHash.dll"
     },
     {
       "Identity": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/_framework/Microsoft.AspNetCore.Authorization.dll",
@@ -731,23 +646,6 @@
       "OriginalItemSpec": "/usr/local/share/dotnet/packs/Microsoft.NETCore.App.Runtime.Mono.browser-wasm/6.0.10/runtimes/browser-wasm/lib/net6.0/Microsoft.Win32.Registry.dll"
     },
     {
-      "Identity": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/_framework/Microsoft.Win32.SystemEvents.dll",
-      "SourceId": "Programmin2_classroom.Client",
-      "SourceType": "Computed",
-      "ContentRoot": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.Win32.SystemEvents.dll",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "BlazorWebAssemblyResource",
-      "AssetTraitValue": "runtime",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "/Users/malkaberry/.nuget/packages/microsoft.win32.systemevents/4.7.0/lib/netstandard2.0/Microsoft.Win32.SystemEvents.dll"
-    },
-    {
       "Identity": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/_framework/mscorlib.dll",
       "SourceId": "Programmin2_classroom.Client",
       "SourceType": "Computed",
@@ -763,23 +661,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "/usr/local/share/dotnet/packs/Microsoft.NETCore.App.Runtime.Mono.browser-wasm/6.0.10/runtimes/browser-wasm/lib/net6.0/mscorlib.dll"
-    },
-    {
-      "Identity": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/_framework/MySql.Data.dll",
-      "SourceId": "Programmin2_classroom.Client",
-      "SourceType": "Computed",
-      "ContentRoot": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/",
-      "BasePath": "/",
-      "RelativePath": "_framework/MySql.Data.dll",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "BlazorWebAssemblyResource",
-      "AssetTraitValue": "runtime",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "/Users/malkaberry/.nuget/packages/mysql.data/8.3.0/lib/net6.0/MySql.Data.dll"
     },
     {
       "Identity": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/_framework/netstandard.dll",
@@ -1088,23 +969,6 @@
       "OriginalItemSpec": "/usr/local/share/dotnet/packs/Microsoft.NETCore.App.Runtime.Mono.browser-wasm/6.0.10/runtimes/browser-wasm/lib/net6.0/System.ComponentModel.TypeConverter.dll"
     },
     {
-      "Identity": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/_framework/System.Configuration.ConfigurationManager.dll",
-      "SourceId": "Programmin2_classroom.Client",
-      "SourceType": "Computed",
-      "ContentRoot": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/",
-      "BasePath": "/",
-      "RelativePath": "_framework/System.Configuration.ConfigurationManager.dll",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "BlazorWebAssemblyResource",
-      "AssetTraitValue": "runtime",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "/Users/malkaberry/.nuget/packages/system.configuration.configurationmanager/4.4.1/lib/netstandard2.0/System.Configuration.ConfigurationManager.dll"
-    },
-    {
       "Identity": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/_framework/System.Configuration.dll",
       "SourceId": "Programmin2_classroom.Client",
       "SourceType": "Computed",
@@ -1255,7 +1119,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "/Users/malkaberry/.nuget/packages/system.diagnostics.diagnosticsource/7.0.2/lib/net6.0/System.Diagnostics.DiagnosticSource.dll"
+      "OriginalItemSpec": "/usr/local/share/dotnet/packs/Microsoft.NETCore.App.Runtime.Mono.browser-wasm/6.0.10/runtimes/browser-wasm/lib/net6.0/System.Diagnostics.DiagnosticSource.dll"
     },
     {
       "Identity": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/_framework/System.Diagnostics.FileVersionInfo.dll",
@@ -1392,23 +1256,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "/usr/local/share/dotnet/packs/Microsoft.NETCore.App.Runtime.Mono.browser-wasm/6.0.10/runtimes/browser-wasm/lib/net6.0/System.dll"
-    },
-    {
-      "Identity": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/_framework/System.Drawing.Common.dll",
-      "SourceId": "Programmin2_classroom.Client",
-      "SourceType": "Computed",
-      "ContentRoot": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/",
-      "BasePath": "/",
-      "RelativePath": "_framework/System.Drawing.Common.dll",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "BlazorWebAssemblyResource",
-      "AssetTraitValue": "runtime",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "/Users/malkaberry/.nuget/packages/system.drawing.common/4.7.0/lib/netstandard2.0/System.Drawing.Common.dll"
     },
     {
       "Identity": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/_framework/System.Drawing.dll",
@@ -2958,23 +2805,6 @@
       "OriginalItemSpec": "/usr/local/share/dotnet/packs/Microsoft.NETCore.App.Runtime.Mono.browser-wasm/6.0.10/runtimes/browser-wasm/lib/net6.0/System.Security.Cryptography.Primitives.dll"
     },
     {
-      "Identity": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/_framework/System.Security.Cryptography.ProtectedData.dll",
-      "SourceId": "Programmin2_classroom.Client",
-      "SourceType": "Computed",
-      "ContentRoot": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/",
-      "BasePath": "/",
-      "RelativePath": "_framework/System.Security.Cryptography.ProtectedData.dll",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "BlazorWebAssemblyResource",
-      "AssetTraitValue": "runtime",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "/Users/malkaberry/.nuget/packages/system.security.cryptography.protecteddata/4.4.0/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll"
-    },
-    {
       "Identity": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/_framework/System.Security.Cryptography.X509Certificates.dll",
       "SourceId": "Programmin2_classroom.Client",
       "SourceType": "Computed",
@@ -3007,23 +2837,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "/usr/local/share/dotnet/packs/Microsoft.NETCore.App.Runtime.Mono.browser-wasm/6.0.10/runtimes/browser-wasm/lib/net6.0/System.Security.dll"
-    },
-    {
-      "Identity": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/_framework/System.Security.Permissions.dll",
-      "SourceId": "Programmin2_classroom.Client",
-      "SourceType": "Computed",
-      "ContentRoot": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/",
-      "BasePath": "/",
-      "RelativePath": "_framework/System.Security.Permissions.dll",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "BlazorWebAssemblyResource",
-      "AssetTraitValue": "runtime",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "/Users/malkaberry/.nuget/packages/system.security.permissions/4.7.0/lib/netcoreapp3.0/System.Security.Permissions.dll"
     },
     {
       "Identity": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/_framework/System.Security.Principal.dll",
@@ -3176,7 +2989,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "/Users/malkaberry/.nuget/packages/system.text.encodings.web/7.0.0/runtimes/browser/lib/net6.0/System.Text.Encodings.Web.dll"
+      "OriginalItemSpec": "/usr/local/share/dotnet/packs/Microsoft.NETCore.App.Runtime.Mono.browser-wasm/6.0.10/runtimes/browser-wasm/lib/net6.0/System.Text.Encodings.Web.dll"
     },
     {
       "Identity": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/_framework/System.Text.Json.dll",
@@ -3193,7 +3006,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "/Users/malkaberry/.nuget/packages/system.text.json/7.0.1/lib/net6.0/System.Text.Json.dll"
+      "OriginalItemSpec": "/usr/local/share/dotnet/packs/Microsoft.NETCore.App.Runtime.Mono.browser-wasm/6.0.10/runtimes/browser-wasm/lib/net6.0/System.Text.Json.dll"
     },
     {
       "Identity": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/_framework/System.Text.RegularExpressions.dll",
@@ -3485,23 +3298,6 @@
       "OriginalItemSpec": "/usr/local/share/dotnet/packs/Microsoft.NETCore.App.Runtime.Mono.browser-wasm/6.0.10/runtimes/browser-wasm/lib/net6.0/System.Windows.dll"
     },
     {
-      "Identity": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/_framework/System.Windows.Extensions.dll",
-      "SourceId": "Programmin2_classroom.Client",
-      "SourceType": "Computed",
-      "ContentRoot": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/",
-      "BasePath": "/",
-      "RelativePath": "_framework/System.Windows.Extensions.dll",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "BlazorWebAssemblyResource",
-      "AssetTraitValue": "runtime",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "/Users/malkaberry/.nuget/packages/system.windows.extensions/4.7.0/lib/netcoreapp3.0/System.Windows.Extensions.dll"
-    },
-    {
       "Identity": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/_framework/System.Xml.dll",
       "SourceId": "Programmin2_classroom.Client",
       "SourceType": "Computed",
@@ -3672,23 +3468,6 @@
       "OriginalItemSpec": "/usr/local/share/dotnet/packs/Microsoft.NETCore.App.Runtime.Mono.browser-wasm/6.0.10/runtimes/browser-wasm/lib/net6.0/WindowsBase.dll"
     },
     {
-      "Identity": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/_framework/ZstdSharp.dll",
-      "SourceId": "Programmin2_classroom.Client",
-      "SourceType": "Computed",
-      "ContentRoot": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/",
-      "BasePath": "/",
-      "RelativePath": "_framework/ZstdSharp.dll",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "BlazorWebAssemblyResource",
-      "AssetTraitValue": "runtime",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "/Users/malkaberry/.nuget/packages/zstdsharp.port/0.7.1/lib/net6.0/ZstdSharp.dll"
-    },
-    {
       "Identity": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/obj/Debug/net6.0/build-gz/+kvs5n5E.gz",
       "SourceId": "Programmin2_classroom.Client",
       "SourceType": "Computed",
@@ -3704,23 +3483,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/_framework/Microsoft.CSharp.dll"
-    },
-    {
-      "Identity": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/obj/Debug/net6.0/build-gz/+N0dch07.gz",
-      "SourceId": "Programmin2_classroom.Client",
-      "SourceType": "Computed",
-      "ContentRoot": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/",
-      "BasePath": "/",
-      "RelativePath": "_framework/K4os.Compression.LZ4.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/_framework/K4os.Compression.LZ4.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/_framework/K4os.Compression.LZ4.dll"
     },
     {
       "Identity": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/obj/Debug/net6.0/build-gz/+pMqiXq6.gz",
@@ -3893,23 +3655,6 @@
       "OriginalItemSpec": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/_framework/System.Threading.Tasks.Dataflow.dll"
     },
     {
-      "Identity": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/obj/Debug/net6.0/build-gz/1EEkl0FJ.gz",
-      "SourceId": "Programmin2_classroom.Client",
-      "SourceType": "Computed",
-      "ContentRoot": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/",
-      "BasePath": "/",
-      "RelativePath": "_framework/System.Security.Cryptography.ProtectedData.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/_framework/System.Security.Cryptography.ProtectedData.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/_framework/System.Security.Cryptography.ProtectedData.dll"
-    },
-    {
       "Identity": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/obj/Debug/net6.0/build-gz/1QBSWKw1.gz",
       "SourceId": "Programmin2_classroom.Client",
       "SourceType": "Computed",
@@ -3942,23 +3687,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/_framework/Microsoft.Extensions.Configuration.Binder.dll"
-    },
-    {
-      "Identity": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/obj/Debug/net6.0/build-gz/2e4V5AJF.gz",
-      "SourceId": "Programmin2_classroom.Client",
-      "SourceType": "Computed",
-      "ContentRoot": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/",
-      "BasePath": "/",
-      "RelativePath": "_framework/System.Security.Permissions.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/_framework/System.Security.Permissions.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/_framework/System.Security.Permissions.dll"
     },
     {
       "Identity": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/obj/Debug/net6.0/build-gz/2Kgs0anQ.gz",
@@ -4063,23 +3791,6 @@
       "OriginalItemSpec": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/_framework/System.Private.Uri.dll"
     },
     {
-      "Identity": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/obj/Debug/net6.0/build-gz/5C0iFYr6.gz",
-      "SourceId": "Programmin2_classroom.Client",
-      "SourceType": "Computed",
-      "ContentRoot": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/",
-      "BasePath": "/",
-      "RelativePath": "_framework/System.Text.Encodings.Web.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/_framework/System.Text.Encodings.Web.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/_framework/System.Text.Encodings.Web.dll"
-    },
-    {
       "Identity": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/obj/Debug/net6.0/build-gz/5ngv2Iyt.gz",
       "SourceId": "Programmin2_classroom.Client",
       "SourceType": "Computed",
@@ -4180,23 +3891,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/_framework/System.IO.Pipes.dll"
-    },
-    {
-      "Identity": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/obj/Debug/net6.0/build-gz/6saRUY02.gz",
-      "SourceId": "Programmin2_classroom.Client",
-      "SourceType": "Computed",
-      "ContentRoot": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/",
-      "BasePath": "/",
-      "RelativePath": "_framework/MySql.Data.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/_framework/MySql.Data.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/_framework/MySql.Data.dll"
     },
     {
       "Identity": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/obj/Debug/net6.0/build-gz/6u+dDUSv.gz",
@@ -4811,23 +4505,6 @@
       "OriginalItemSpec": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/_framework/Microsoft.Extensions.Configuration.Abstractions.dll"
     },
     {
-      "Identity": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/obj/Debug/net6.0/build-gz/eaYi9Xpm.gz",
-      "SourceId": "Programmin2_classroom.Client",
-      "SourceType": "Computed",
-      "ContentRoot": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/",
-      "BasePath": "/",
-      "RelativePath": "_framework/BouncyCastle.Cryptography.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/_framework/BouncyCastle.Cryptography.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/_framework/BouncyCastle.Cryptography.dll"
-    },
-    {
       "Identity": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/obj/Debug/net6.0/build-gz/ebl+aQw+.gz",
       "SourceId": "Programmin2_classroom.Client",
       "SourceType": "Computed",
@@ -4911,23 +4588,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/_framework/Microsoft.VisualBasic.dll"
-    },
-    {
-      "Identity": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/obj/Debug/net6.0/build-gz/eNj693vh.gz",
-      "SourceId": "Programmin2_classroom.Client",
-      "SourceType": "Computed",
-      "ContentRoot": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/",
-      "BasePath": "/",
-      "RelativePath": "_framework/ZstdSharp.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/_framework/ZstdSharp.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/_framework/ZstdSharp.dll"
     },
     {
       "Identity": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/obj/Debug/net6.0/build-gz/et55ECMB.gz",
@@ -5440,6 +5100,23 @@
       "OriginalItemSpec": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/_framework/Microsoft.Extensions.Configuration.Json.dll"
     },
     {
+      "Identity": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/obj/Debug/net6.0/build-gz/iS3+wp0Y.gz",
+      "SourceId": "Programmin2_classroom.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/",
+      "BasePath": "/",
+      "RelativePath": "_framework/System.Diagnostics.DiagnosticSource.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/_framework/System.Diagnostics.DiagnosticSource.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/_framework/System.Diagnostics.DiagnosticSource.dll"
+    },
+    {
       "Identity": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/obj/Debug/net6.0/build-gz/iV4U2E++.gz",
       "SourceId": "Programmin2_classroom.Client",
       "SourceType": "Computed",
@@ -5608,23 +5285,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/_framework/System.Diagnostics.TextWriterTraceListener.dll"
-    },
-    {
-      "Identity": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/obj/Debug/net6.0/build-gz/K2x+3FLa.gz",
-      "SourceId": "Programmin2_classroom.Client",
-      "SourceType": "Computed",
-      "ContentRoot": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/",
-      "BasePath": "/",
-      "RelativePath": "_framework/System.Configuration.ConfigurationManager.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/_framework/System.Configuration.ConfigurationManager.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/_framework/System.Configuration.ConfigurationManager.dll"
     },
     {
       "Identity": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/obj/Debug/net6.0/build-gz/K3m+UTUZ.gz",
@@ -6137,21 +5797,21 @@
       "OriginalItemSpec": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/_framework/System.Private.Xml.dll"
     },
     {
-      "Identity": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/obj/Debug/net6.0/build-gz/p9pyj8oF.gz",
+      "Identity": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/obj/Debug/net6.0/build-gz/P94HRL8k.gz",
       "SourceId": "Programmin2_classroom.Client",
       "SourceType": "Computed",
       "ContentRoot": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/",
       "BasePath": "/",
-      "RelativePath": "_framework/K4os.Hash.xxHash.dll.gz",
+      "RelativePath": "_framework/System.Text.Json.dll.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
-      "RelatedAsset": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/_framework/K4os.Hash.xxHash.dll",
+      "RelatedAsset": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/_framework/System.Text.Json.dll",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/_framework/K4os.Hash.xxHash.dll"
+      "OriginalItemSpec": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/_framework/System.Text.Json.dll"
     },
     {
       "Identity": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/obj/Debug/net6.0/build-gz/P9V+zl02.gz",
@@ -6409,23 +6069,6 @@
       "OriginalItemSpec": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/_framework/System.Net.WebProxy.dll"
     },
     {
-      "Identity": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/obj/Debug/net6.0/build-gz/RtSLlL2U.gz",
-      "SourceId": "Programmin2_classroom.Client",
-      "SourceType": "Computed",
-      "ContentRoot": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/",
-      "BasePath": "/",
-      "RelativePath": "_framework/K4os.Compression.LZ4.Streams.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/_framework/K4os.Compression.LZ4.Streams.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/_framework/K4os.Compression.LZ4.Streams.dll"
-    },
-    {
       "Identity": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/obj/Debug/net6.0/build-gz/s0cT+oVM.gz",
       "SourceId": "Programmin2_classroom.Client",
       "SourceType": "Computed",
@@ -6613,23 +6256,6 @@
       "OriginalItemSpec": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/_framework/System.IO.MemoryMappedFiles.dll"
     },
     {
-      "Identity": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/obj/Debug/net6.0/build-gz/TF7lqpO7.gz",
-      "SourceId": "Programmin2_classroom.Client",
-      "SourceType": "Computed",
-      "ContentRoot": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.Win32.SystemEvents.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/_framework/Microsoft.Win32.SystemEvents.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/_framework/Microsoft.Win32.SystemEvents.dll"
-    },
-    {
       "Identity": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/obj/Debug/net6.0/build-gz/TKRwAL1+.gz",
       "SourceId": "Programmin2_classroom.Client",
       "SourceType": "Computed",
@@ -6662,6 +6288,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/_framework/System.Net.Security.dll"
+    },
+    {
+      "Identity": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/obj/Debug/net6.0/build-gz/TwwNrauw.gz",
+      "SourceId": "Programmin2_classroom.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/",
+      "BasePath": "/",
+      "RelativePath": "_framework/System.Text.Encodings.Web.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/_framework/System.Text.Encodings.Web.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/_framework/System.Text.Encodings.Web.dll"
     },
     {
       "Identity": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/obj/Debug/net6.0/build-gz/UcSjAzvR.gz",
@@ -6749,23 +6392,6 @@
       "OriginalItemSpec": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/_framework/Microsoft.AspNetCore.Components.Web.dll"
     },
     {
-      "Identity": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/obj/Debug/net6.0/build-gz/uzLVlzDF.gz",
-      "SourceId": "Programmin2_classroom.Client",
-      "SourceType": "Computed",
-      "ContentRoot": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/",
-      "BasePath": "/",
-      "RelativePath": "_framework/System.Windows.Extensions.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/_framework/System.Windows.Extensions.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/_framework/System.Windows.Extensions.dll"
-    },
-    {
       "Identity": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/obj/Debug/net6.0/build-gz/v5b3wqd6.gz",
       "SourceId": "Programmin2_classroom.Client",
       "SourceType": "Computed",
@@ -6849,23 +6475,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/_framework/System.Net.dll"
-    },
-    {
-      "Identity": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/obj/Debug/net6.0/build-gz/vj7UQu5A.gz",
-      "SourceId": "Programmin2_classroom.Client",
-      "SourceType": "Computed",
-      "ContentRoot": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/",
-      "BasePath": "/",
-      "RelativePath": "_framework/System.Diagnostics.DiagnosticSource.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/_framework/System.Diagnostics.DiagnosticSource.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/_framework/System.Diagnostics.DiagnosticSource.dll"
     },
     {
       "Identity": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/obj/Debug/net6.0/build-gz/VlxxPHmz.gz",
@@ -6953,23 +6562,6 @@
       "OriginalItemSpec": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/_framework/Microsoft.JSInterop.WebAssembly.dll"
     },
     {
-      "Identity": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/obj/Debug/net6.0/build-gz/Wv10d2kh.gz",
-      "SourceId": "Programmin2_classroom.Client",
-      "SourceType": "Computed",
-      "ContentRoot": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/",
-      "BasePath": "/",
-      "RelativePath": "_framework/Google.Protobuf.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/_framework/Google.Protobuf.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/_framework/Google.Protobuf.dll"
-    },
-    {
       "Identity": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/obj/Debug/net6.0/build-gz/wY5wSutO.gz",
       "SourceId": "Programmin2_classroom.Client",
       "SourceType": "Computed",
@@ -7038,23 +6630,6 @@
       "OriginalItemSpec": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/_framework/System.Threading.Tasks.Parallel.dll"
     },
     {
-      "Identity": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/obj/Debug/net6.0/build-gz/XrSh44X9.gz",
-      "SourceId": "Programmin2_classroom.Client",
-      "SourceType": "Computed",
-      "ContentRoot": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/",
-      "BasePath": "/",
-      "RelativePath": "_framework/System.Text.Json.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/_framework/System.Text.Json.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/_framework/System.Text.Json.dll"
-    },
-    {
       "Identity": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/obj/Debug/net6.0/build-gz/yEqJ2ete.gz",
       "SourceId": "Programmin2_classroom.Client",
       "SourceType": "Computed",
@@ -7104,23 +6679,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/_framework/icudt_no_CJK.dat"
-    },
-    {
-      "Identity": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/obj/Debug/net6.0/build-gz/yjgZbTUS.gz",
-      "SourceId": "Programmin2_classroom.Client",
-      "SourceType": "Computed",
-      "ContentRoot": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/",
-      "BasePath": "/",
-      "RelativePath": "_framework/System.Drawing.Common.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/_framework/System.Drawing.Common.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/bin/Debug/net6.0/wwwroot/_framework/System.Drawing.Common.dll"
     },
     {
       "Identity": "/Users/malkaberry/Downloads/Programmin2_classroom-EMPTY (1)/FinalProject/Client/obj/Debug/net6.0/build-gz/yk0flpB4.gz",

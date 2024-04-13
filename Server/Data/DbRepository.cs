@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Data;
 using Dapper;
-using Microsoft.Data.Sqlite;
+using MySql.Data.MySqlClient;
 
 
 namespace TriangleDbRepository
@@ -19,7 +19,7 @@ namespace TriangleDbRepository
 
         public DbRepository(IConfiguration config)
         {
-            _dbConnection = new SqliteConnection(config.GetConnectionString("DefaultConnection"));
+            _dbConnection = new MySqlConnection(config.GetConnectionString("DefaultConnection"));
         }
 
 
@@ -89,7 +89,7 @@ namespace TriangleDbRepository
 
                 if (results > 0)
                 {
-                    int Id = _dbConnection.Query<int>("SELECT last_insert_rowid()").FirstOrDefault();
+                    int Id = _dbConnection.Query<int>("SELECT LAST_INSERT_ID()").FirstOrDefault();
                     CloseConnection();
                     return Id;
                 }

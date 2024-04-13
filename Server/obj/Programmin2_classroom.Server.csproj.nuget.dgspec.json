@@ -125,6 +125,10 @@
             "Microsoft.Data.Sqlite": {
               "target": "Package",
               "version": "[6.0.13, )"
+            },
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[6.10.9, )"
             }
           },
           "imports": [
@@ -187,10 +191,6 @@
             "Dapper": {
               "target": "Package",
               "version": "[2.1.35, )"
-            },
-            "MySql.Data": {
-              "target": "Package",
-              "version": "[8.3.0, )"
             }
           },
           "imports": [
