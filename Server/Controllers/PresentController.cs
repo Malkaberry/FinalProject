@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Programmin2_classroom.Shared.Models.present.toAdd;
+using Programmin2_classroom.Shared.Models.present.toEdit;
 using Programmin2_classroom.Shared.Models.present.toShow;
 using TriangleDbRepository;
 
@@ -41,7 +43,7 @@ namespace Programmin2_classroom.Server.Controllers
 
                 if (user.categoriesFullList != null)
                 {
-                    
+
                     foreach (var category in user.categoriesFullList)
                     {
                         string GetBudgetSumQuery = "SELECT SUM(monthlyPlannedBudget) FROM subcategories WHERE categoryID = @categoryID";
@@ -57,11 +59,11 @@ namespace Programmin2_classroom.Server.Controllers
 
                     }
 
-                }    
+                }
                 var recordsSpendings = await _db.GetRecordsAsync<double>(GetSpendingsQuery, param);
                 user.spendingValueFullList = recordsSpendings.FirstOrDefault();
 
-                user.budgetFullValue = Math.Round((budgetSum / user.spendingValueFullList) * 100); 
+                user.budgetFullValue = Math.Round((budgetSum / user.spendingValueFullList) * 100);
 
                 var recordsIncomes = await _db.GetRecordsAsync<double>(GetIncomesQuery, param);
                 user.incomeValueFullList = recordsIncomes.FirstOrDefault();
@@ -104,7 +106,7 @@ namespace Programmin2_classroom.Server.Controllers
                     {
                         return BadRequest("no transaction in sub category");
                     }
-                   
+
                 }
 
                 return Ok(subCategories);
@@ -112,9 +114,97 @@ namespace Programmin2_classroom.Server.Controllers
 
             return BadRequest("user not found");
         }
-    }
 
-}  
+
+        [HttpGet("GetCategoryToEdit/{CategoryId}")] // שליפת קטגוריה לעריכה
+        public async Task<IActionResult> GetFullGame(int CategoryId)
+        {
+
+            object param = new
+            {
+                ID = CategoryId
+            };
+
+            string GetCategoryQuery = "SELECT id, categroyTitle, icon, color FROM categories WHERE id = @ID";
+
+            var recordCategory = await _db.GetRecordsAsync<CategoryToShow>(GetCategoryQuery, param);
+            CategoryToShow category = recordCategory.FirstOrDefault();
+
+            if (category != null)
+            {
+                return Ok(category);
+            }
+            return BadRequest("category not found");
+        }
+
+
+
+        [HttpPost("EditCategory")]  // עריכת קטגוריה
+
+        public async Task<IActionResult> editCategory(CategoryToEdit categoryToUpdate)
+        {
+
+            object updateParam = new
+            {
+                ID = categoryToUpdate.id,
+                categroyTitle = categoryToUpdate.categroyTitle,
+                icon = categoryToUpdate.icon,
+                color = categoryToUpdate.color
+            };
+
+            string UpdateCategoryQuery = "UPDATE categories set categroyTitle = @categroyTitle, icon = @icon, color = @color where id =@ID";
+            bool isUpdate = await _db.SaveDataAsync(UpdateCategoryQuery, updateParam);
+
+            if (isUpdate)
+            {
+                return Ok(categoryToUpdate);
+            }
+            return BadRequest("update category faild");
+        }
+
+
+
+        [HttpPost("AddCategory/{userID}")] // יצירת קטגוריה חדשה
+        public async Task<IActionResult> AddCategory(int userID, CategoryToAdd categoryToAdd) // לראות איך היוזר אידי מגיע מהפרונט אנד 
+        {
+            object categoryToAddParam = new
+            {
+                userID = userID,
+                categroyTitle = categoryToAdd.categroyTitle,
+                icon = categoryToAdd.icon,
+                color = categoryToAdd.color
+            };
+
+            string insertCategoryQuery = "INSERT INTO categories (categroyTitle,userID, icon, color) values (@categroyTitle ,@userID ,@icon ,@color)";
+
+            int newCategoryId = await _db.InsertReturnId(insertCategoryQuery, categoryToAddParam);
+
+            if (newCategoryId != 0)
+            {
+                object param = new
+                {
+                    id = newCategoryId,
+                    userID = categoryToAdd.userID
+                };
+
+                string GetCategoryQuery = "SELECT id, categroyTitle, icon, color FROM categories WHERE id = @id AND userID = @userID";
+                var recordsCategory = await _db.GetRecordsAsync<CategoryToShow>(GetCategoryQuery, param);
+                CategoryToShow category = recordsCategory.FirstOrDefault();
+
+                if (category != null)
+                {
+                    return Ok(category);
+                }
+                return BadRequest("category not found");
+
+            }
+
+            return BadRequest("category not created");
+        }
+
+    }
+}
+
 
 
 
