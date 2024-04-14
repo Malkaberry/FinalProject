@@ -6,10 +6,6 @@
 		<ImplicitUsings>enable</ImplicitUsings>
 	</PropertyGroup>
 	<ItemGroup>
-		<Compile Remove="Controllers\**" />
-		<Content Remove="Controllers\**" />
-		<EmbeddedResource Remove="Controllers\**" />
-		<None Remove="Controllers\**" />
 		<None Remove="MySql.Data" />
 	</ItemGroup>
 	<ItemGroup>
