@@ -197,15 +197,15 @@
       "mscorlib.dll": "sha256-SboUbkX8s5RVQGtnN5Q67MBZW0I\/P3aeEMENJq8gv8M=",
       "netstandard.dll": "sha256-lZ8L5iiSghlvyt2ie2YdBYAtJbVa4mvpvBX3W9ihjLc=",
       "System.Private.CoreLib.dll": "sha256-jECkJy2Sjpl59QEL3nO3p8nwKGXvnJpXaKQF\/+MTw04=",
-      "Programmin2_classroom.Shared.dll": "sha256-vy1D44GOueN3V6Vaas67k9qBfesVuf6saB9dneP\/kvs=",
-      "Programmin2_classroom.Client.dll": "sha256-hdpDQYhm2s5Mo1F0qkyPDhVhCjFDW7U4I6YsqARXxyY="
+      "Programmin2_classroom.Shared.dll": "sha256-WzfT6eEHkWsQ3KEMPSC1FdHwJ2979VPeXmCFR\/\/Y5wQ=",
+      "Programmin2_classroom.Client.dll": "sha256-6CBxD\/p7b0d5Md7Xc1gO\/myx5SWM0sYquvggYbwIdLw="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
-      "Programmin2_classroom.Shared.pdb": "sha256-Pm+l7BrskSFX2zMkfdSlKlJj1vti8Km\/gfyDBiHdVMU=",
-      "Programmin2_classroom.Client.pdb": "sha256-SQquZSJiDlBmSgrEwleVp4Jh8aryXnkSwOJS6LF6iSc="
+      "Programmin2_classroom.Shared.pdb": "sha256-r+UrG11HHpYJcyx4oZ5uoNJZIlKDDcgCGlNolPZ7Lqg=",
+      "Programmin2_classroom.Client.pdb": "sha256-kb4+B8zCnyvg56JPdt+oAUBLGBTDyLdXx5oww5AgRDs="
     },
     "runtime": {
       "dotnet.6.0.10.qdt6oekupz.js": "sha256-KtM3Wrooexmrt5NmqvZfWoDPtNIe6wZqLopR6ToqUPg=",

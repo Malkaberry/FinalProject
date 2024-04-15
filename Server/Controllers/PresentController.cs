@@ -56,9 +56,7 @@ namespace Programmin2_classroom.Server.Controllers
                         double budgetValue = recordsBudget.FirstOrDefault();
                         user.budgetFullValue += budgetValue; // Add to the total sum
                         budgetSum = user.budgetFullValue;
-
                     }
-
                 }
                 var recordsSpendings = await _db.GetRecordsAsync<double>(GetSpendingsQuery, param);
                 user.spendingValueFullList = recordsSpendings.FirstOrDefault();
@@ -202,6 +200,79 @@ namespace Programmin2_classroom.Server.Controllers
             return BadRequest("category not created");
         }
 
+        [HttpDelete("deleteCategory/{CategoryIdToDelete}")] // מחיקת קטגוריה
+        public async Task<IActionResult> DeleteCategory(int CategoryIdToDelete)
+        {
+            string DeleteQuery = "DELETE FROM categories WHERE id=@ID";
+            bool isCategoryDeleted = await _db.SaveDataAsync(DeleteQuery, new { ID = CategoryIdToDelete });
+
+            if (isCategoryDeleted)
+            {
+                return Ok();
+            }
+
+            return BadRequest("Failed to delete category");
+        }
+
+
+        [HttpGet("GetCategoriesOverview/{userID}")] // שליפת קטגוריות וסכומים לעמוד סטורי במצב החודש כרגע
+        public async Task<IActionResult> GetCategoriesOverview(int userID)
+        {
+            object param = new { ID = userID };
+
+            string GetCategoryOverviewIDQuery = "SELECT id FROM categories WHERE userID = @ID";
+            var recordCategoryOverviewID = await _db.GetRecordsAsync<int>(GetCategoryOverviewIDQuery, param);
+
+            if (recordCategoryOverviewID == null)
+            {
+                return Ok(new List<CategoriesOverviewToShow>());  // Return an empty list if no categories found
+            }
+
+            List<CategoriesOverviewToShow> categoriesOverviewToShowList = new List<CategoriesOverviewToShow>();
+
+            foreach (int catID in recordCategoryOverviewID)
+            {
+                double subCatSum = 0;  // Reset sum for each category
+
+                object categoryParam = new { ID = catID };
+
+
+                string GetSubCategoryIDQuery = "SELECT id FROM subcategories WHERE categoryID = @ID";
+                var recordSubCategoryID = await _db.GetRecordsAsync<int>(GetSubCategoryIDQuery, categoryParam);
+
+                if (recordSubCategoryID != null)
+                {
+                    foreach (int subCatID in recordSubCategoryID)
+                    {
+                        object subCatIDParam = new { ID = subCatID };
+
+                        // Expenses:
+                        string GetCategoryCurrentSumQuery = "SELECT COALESCE(SUM(transValue), 0) FROM transactions WHERE subCategoryID = @ID";
+                        var recordSubCatCurrentSum = await _db.GetRecordsAsync<double>(GetCategoryCurrentSumQuery, subCatIDParam);
+                        subCatSum += recordSubCatCurrentSum.FirstOrDefault();
+
+                        //    // Income:
+                        //    string GetIncomesQuery = "SELECT COALESCE(SUM(transValue), 0) FROM transactions WHERE subCategoryID = @ID AND transType = 2";
+                        //    var recordSubCatCurrentSumIncome = await _db.GetRecordsAsync<double>(GetIncomesQuery, subCatIDParam);
+                        //    subCatSum += recordSubCatCurrentSumIncome.FirstOrDefault();
+                        //}
+                    }
+
+                    string GetCategoryTitleOverviewQuery = "SELECT categroyTitle FROM categories WHERE id = @ID"; // Correct potential typo from 'categroyTitle' to 'categoryTitle'
+                    var getCategoryTitle = await _db.GetRecordsAsync<string>(GetCategoryTitleOverviewQuery, categoryParam);
+                    CategoriesOverviewToShow currentCategoryStats = new CategoriesOverviewToShow();
+
+                    if (getCategoryTitle != null)
+                    {                     
+                        currentCategoryStats.categroyTitle = getCategoryTitle.FirstOrDefault(); // Also corrected the property name if typo existed
+                        currentCategoryStats.currentCategorySum = subCatSum;                        
+                    }
+
+                    categoriesOverviewToShowList.Add(currentCategoryStats);
+                }                
+            }
+            return Ok(categoriesOverviewToShowList);
+        }
     }
 }
 
