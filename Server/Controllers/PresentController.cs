@@ -72,13 +72,15 @@ namespace Programmin2_classroom.Server.Controllers
         }
 
 
-        [HttpGet("subCategoryToShow/{categoryID}")]
+        [HttpGet("subCategoryToShow/{categoryID}")] // הצגה של תתי קטגוריות בלחיצה על הדרופדאון
         public async Task<IActionResult> subCategoryToShow(int categoryID)
         {
             object param = new
             {
                 ID = categoryID
             };
+
+             // צריך להוסיף שאילתה שמושכת את הצבע מהקטגוריה בשביל להציג גם בתתי קטגוריות אם בחר צבע.
 
             string GetSubCategoriesQuery = "SELECT id, subCategoryTitle, monthlyPlannedBudget FROM subcategories WHERE categoryID = @ID";
             var recordsubCategories = await _db.GetRecordsAsync<SubCategoryToShow>(GetSubCategoriesQuery, param);
@@ -215,7 +217,7 @@ namespace Programmin2_classroom.Server.Controllers
         }
 
 
-        [HttpGet("GetCategoriesOverview/{userID}")] // שליפת קטגוריות וסכומים לעמוד סטורי במצב החודש כרגע
+        [HttpGet("GetCategoriesOverview/{userID}")] // שליפת קטגוריות וסכומים לעמוד סטורי 3 במצב החודש כרגע
         public async Task<IActionResult> GetCategoriesOverview(int userID)
         {
             object param = new { ID = userID };
@@ -273,6 +275,92 @@ namespace Programmin2_classroom.Server.Controllers
             }
             return Ok(categoriesOverviewToShowList);
         }
+
+
+        [HttpGet("GetTagsAndSpendings/{userID}")] // שליפת תגיות וסכומים שלהן לעמוד סטורי 2 במצב החודש כרגע
+        public async Task<IActionResult> GetTagsAndSpendings(int userID)
+        {
+            List<TagsAndSpendingsToShow> TagsAndSpendingsToShowList = new List<TagsAndSpendingsToShow>();
+
+            object param = new
+            {
+                ID = userID
+            };
+
+            string GetTagsAndSpendingsQuery = @"SELECT t.tagID, tg.tagTitle, tg.tagColor, SUM(t.transValue) as totalValue 
+        FROM transactions t
+        JOIN tags tg ON t.tagID = tg.id
+        WHERE t.userID = @ID AND t.transType = 1 
+        GROUP BY t.tagID, tg.tagTitle, tg.tagColor 
+        ORDER BY totalValue DESC 
+        LIMIT 3";
+
+            var recordTagsAndSpendings = await _db.GetRecordsAsync<TagsAndSpendingsToShow>(GetTagsAndSpendingsQuery, param);
+            TagsAndSpendingsToShowList = recordTagsAndSpendings.ToList();
+
+            if (TagsAndSpendingsToShowList != null && TagsAndSpendingsToShowList.Any())
+            {
+                return Ok(TagsAndSpendingsToShowList);
+            }
+            return BadRequest("Tags and Spendings not found");
+        }
+
+        // לעשות שיטה של הסטורי הראשון !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+        [HttpGet("GetSubCategoryToEdit/{SubCategoryId}")] // שליפת תת קטגוריה לעריכה
+        public async Task<IActionResult> GetSubCategoryToEdit(int SubCategoryId)
+        {
+            object param = new
+            {
+                ID = SubCategoryId
+            };
+
+            // Updated SQL query to join the subcategories table with the category table
+            string GetSubCategoryQuery = @"
+        SELECT sc.id, sc.subCategoryTitle, sc.categoryID, sc.monthlyPlannedBudget, sc.importance, cat.categroyTitle 
+        FROM subcategories sc
+        JOIN categories cat ON sc.categoryID = cat.id
+        WHERE sc.id = @ID";
+
+            var recordSubCategory = await _db.GetRecordsAsync<SubCategoryToEdit>(GetSubCategoryQuery, param);
+            SubCategoryToEdit subCategory = recordSubCategory.FirstOrDefault();
+
+            if (subCategory != null)
+            {
+                return Ok(subCategory);
+            }
+            return BadRequest("Sub Category not found");
+        }
+
+        [HttpPost("EditSubCategory")]  // עריכת  תת קטגוריה
+
+        public async Task<IActionResult> editSubCategory(SubCategoryToUpdate subCategoryToUpdate)
+        {
+
+            object subCategoryUpdateParam = new
+            {
+                ID = subCategoryToUpdate.id,
+                subCategoryTitle = subCategoryToUpdate.subCategoryTitle,
+                categoryID = subCategoryToUpdate.categoryID,
+                monthlyPlannedBudget = subCategoryToUpdate.monthlyPlannedBudget,
+                importance = subCategoryToUpdate.importance
+            };
+
+            string UpdateSubCategoryQuery = "UPDATE subcategories set subCategoryTitle = @subCategoryTitle, categoryID = @categoryID, monthlyPlannedBudget = @monthlyPlannedBudget, importance=@importance where id =@ID";
+            bool isUpdate = await _db.SaveDataAsync(UpdateSubCategoryQuery, subCategoryUpdateParam);
+
+            if (isUpdate)
+            {
+                return Ok(subCategoryToUpdate);
+            }
+            return BadRequest("update sub category faild");
+        }
+
+
+
+
+
+
     }
 }
 
