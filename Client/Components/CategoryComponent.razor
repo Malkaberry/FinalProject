@@ -1,17 +1,42 @@
 ﻿@using Programmin2_classroom.Shared.Models.present.toShow
 @using Programmin2_classroom.Shared.Models.present.toAdd
 @using Programmin2_classroom.Shared.Models.present.toEdit
+@using Microsoft.AspNetCore.Components.Web
+@inject HttpClient Http
 
 <div>
-    <h1>@category.categroyTitle</h1>
+    <img />
+    <h2>@Category.categroyTitle</h2>
+    <button>options</button>
+    <button @onclick="getSubCategories">open accordion</button>
+    @if (subCategories.Count>0)
+    {
+        @foreach (SubCategoryToShow subcategory in subCategories)
+        {
+            <SubCategoryComponent subCategoryTitle="@subcategory.subCategoryTitle" totalSpendings="@subcategory.transactionsValue" budget="@subcategory.monthlyPlannedBudget"></SubCategoryComponent>
+        }
+    }
 </div>
 
 
-
-
-
 @code {
+    [Parameter]
+    public CategoryToShow Category { get; set; }
 
-    CategoryToShow category;
+    List<SubCategoryToShow> subCategories = new List<SubCategoryToShow>();
+
+    public async Task getSubCategories()
+    {
+        var subCatRes = await Http.GetAsync("api/Present/subCategoryToShow/"+ Category.id);
+        if (subCatRes.IsSuccessStatusCode)
+        {
+            subCategories = subCatRes.Content.ReadFromJsonAsync<List<SubCategoryToShow>>().Result;
+        }
+        else
+        {
+            Console.WriteLine("no subcategories found");
+        }
+    }
 
 }
+

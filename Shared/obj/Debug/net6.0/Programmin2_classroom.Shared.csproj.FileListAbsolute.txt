@@ -22,3 +22,15 @@ C:\Users\Inbal\Documents\שנה ג\פרוייקט גמר\FinalProject\Shared\obj
 C:\Users\Inbal\Documents\שנה ג\פרוייקט גמר\FinalProject\Shared\obj\Debug\net6.0\refint\Programmin2_classroom.Shared.dll
 C:\Users\Inbal\Documents\שנה ג\פרוייקט גמר\FinalProject\Shared\obj\Debug\net6.0\Programmin2_classroom.Shared.pdb
 C:\Users\Inbal\Documents\שנה ג\פרוייקט גמר\FinalProject\Shared\obj\Debug\net6.0\ref\Programmin2_classroom.Shared.dll
+C:\Users\97258\OneDrive\Desktop\FinalProject_GithubRepository\FinalProject\Shared\bin\Debug\net6.0\Programmin2_classroom.Shared.deps.json
+C:\Users\97258\OneDrive\Desktop\FinalProject_GithubRepository\FinalProject\Shared\bin\Debug\net6.0\Programmin2_classroom.Shared.dll
+C:\Users\97258\OneDrive\Desktop\FinalProject_GithubRepository\FinalProject\Shared\bin\Debug\net6.0\Programmin2_classroom.Shared.pdb
+C:\Users\97258\OneDrive\Desktop\FinalProject_GithubRepository\FinalProject\Shared\obj\Debug\net6.0\Programmin2_classroom.Shared.csproj.AssemblyReference.cache
+C:\Users\97258\OneDrive\Desktop\FinalProject_GithubRepository\FinalProject\Shared\obj\Debug\net6.0\Programmin2_classroom.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\97258\OneDrive\Desktop\FinalProject_GithubRepository\FinalProject\Shared\obj\Debug\net6.0\Programmin2_classroom.Shared.AssemblyInfoInputs.cache
+C:\Users\97258\OneDrive\Desktop\FinalProject_GithubRepository\FinalProject\Shared\obj\Debug\net6.0\Programmin2_classroom.Shared.AssemblyInfo.cs
+C:\Users\97258\OneDrive\Desktop\FinalProject_GithubRepository\FinalProject\Shared\obj\Debug\net6.0\Programmin2_classroom.Shared.csproj.CoreCompileInputs.cache
+C:\Users\97258\OneDrive\Desktop\FinalProject_GithubRepository\FinalProject\Shared\obj\Debug\net6.0\Programmin2_classroom.Shared.dll
+C:\Users\97258\OneDrive\Desktop\FinalProject_GithubRepository\FinalProject\Shared\obj\Debug\net6.0\refint\Programmin2_classroom.Shared.dll
+C:\Users\97258\OneDrive\Desktop\FinalProject_GithubRepository\FinalProject\Shared\obj\Debug\net6.0\Programmin2_classroom.Shared.pdb
+C:\Users\97258\OneDrive\Desktop\FinalProject_GithubRepository\FinalProject\Shared\obj\Debug\net6.0\ref\Programmin2_classroom.Shared.dll

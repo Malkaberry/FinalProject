@@ -2,6 +2,7 @@
 @using Programmin2_classroom.Shared.Models.present.toShow
 @using Programmin2_classroom.Shared.Models.present.toAdd
 @using Programmin2_classroom.Shared.Models.present.toEdit
+@using Programmin2_classroom.Client.Components
 @*@using Programmin2_classroom.Shared.Models.past
 @using Programmin2_classroom.Shared.Models.future*@
 @*@using Programmin2_classroom.Client.Components*@
@@ -60,6 +61,9 @@
         foreach (CategoryToShow category in user.categoriesFullList)
         {
 
+            <CategoryComponent Category=category>
+
+            </CategoryComponent>
             
 
 
@@ -69,9 +73,11 @@
 
     }
 
-
-
-
+    <div id="bottomNav" style="position: fixed; bottom: 20px; left: 20px; z-index: 1000;">
+    <button>מבט לעבר</button>
+        <button>מבט להווה</button>
+        <button>מבט לעתיד</button>
+</div>
 }
 
 

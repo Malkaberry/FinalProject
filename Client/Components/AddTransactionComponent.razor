@@ -1,0 +1,67 @@
+﻿@using Programmin2_classroom.Shared.Models.present.toAdd
+<h3>הוספה לתת קטגוריה: @subCategoryTitle </h3>
+<div>
+
+<button>פרטי ההזנה שלי</button>
+<p>פרטי ההזנה</p>
+<input type="text" @bind="newTransaction.transTitle"/>
+
+<input type="date" @bind="newTransaction.transDate" />
+@if (selectedDate.HasValue)
+{
+    <p>Selected Date: @selectedDate.Value.ToShortDateString()</p>
+}
+else
+{
+        <p>No date selected.</p>
+}
+<p>סכום ההזנה</p>
+<input type="number" @bind="newTransaction.transValue" />
+<p>ההזנה בתשלומים?</p>
+<input type="checkbox" @bind="splitPayment" />
+@if (splitPayment)
+{
+    <select @bind="selectedNumber">
+        @for (int i = 1; i <= 12; i++)
+        {
+                <option value="@i תשלומים">@i תשלומים</option>
+        }
+    </select>
+
+    <p>סכום כל תשלום בממוצע @(newTransaction.transValue / selectedNumber) ₪</p>
+}
+<p>אמצעי תשלום</p>
+<select @bind="newTransaction.valueType">
+    
+    <option value="מזומן">מזומן</option>
+    <option value="אשראי">אשראי</option>
+    <option value="ביט/פייבוקס">ביט/פייבוקס</option>
+    <option value="אחר">אחר</option>
+
+</select>
+@if (!string.IsNullOrEmpty(newTransaction.valueType))
+{
+    <p>שיטת תשלום נבחרת: @newTransaction.valueType</p>
+}
+<button>הגדרת ההוצאה כחוזרת</button> @*לעשות קומפוננטה של חלון הגדרת הוצאה כחוזרת*@
+</div>
+<div>
+    <button>הגדרות מתקדמות</button>
+@*    להוסיף את כל מה שהסקשן הזה מכיל*@
+</div>
+<button>שמירה והזנה נוספת</button>
+<button>שמירה וסיום</button>
+@code {
+    [Parameter]
+    public string subCategoryTitle { get; set; }
+
+    TransactionToAdd newTransaction = new TransactionToAdd();
+
+    private DateTime? selectedDate;
+
+    bool splitPayment = false;
+
+    private int selectedNumber = 1; // Default value
+
+    
+}
