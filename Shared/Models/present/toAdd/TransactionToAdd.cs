@@ -14,9 +14,9 @@ namespace Programmin2_classroom.Shared.Models.present.toAdd
         public double transValue { get; set; }
         public string valueType { get; set; } //cash, credit, else
         public DateTime transDate { get; set; }
-        public string description { get; set; }
-        public bool fixedMonthly { get; set; }
-        public int parentTransID { get; set; }
-        public int tagID { get; set; }
+        public string? description { get; set; }
+        public bool? fixedMonthly { get; set; }
+        public int? parentTransID { get; set; }
+        public int? tagID { get; set; }
     }
 }

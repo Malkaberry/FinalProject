@@ -13,7 +13,7 @@
     {
         @foreach (SubCategoryToShow subcategory in subCategories)
         {
-            <SubCategoryComponent subCategoryTitle="@subcategory.subCategoryTitle" totalSpendings="@subcategory.transactionsValue" budget="@subcategory.monthlyPlannedBudget"></SubCategoryComponent>
+            <SubCategoryComponent subCategoryTitle="@subcategory.subCategoryTitle" totalSpendings="@subcategory.transactionsValue" budget="@subcategory.monthlyPlannedBudget" subCategoryIDToGet="@subcategory.id"></SubCategoryComponent>
         }
     }
 </div>

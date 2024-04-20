@@ -1,4 +1,6 @@
 ﻿@using Programmin2_classroom.Shared.Models.present.toAdd
+@inject HttpClient Http;
+
 <h3>הוספה לתת קטגוריה: @subCategoryTitle </h3>
 <div>
 
@@ -24,8 +26,10 @@ else
     <select @bind="selectedNumber">
         @for (int i = 1; i <= 12; i++)
         {
-                <option value="@i תשלומים">@i תשלומים</option>
+                <option value="@i">@i תשלומים</option>
+              
         }
+            selectedNumber = i;
     </select>
 
     <p>סכום כל תשלום בממוצע @(newTransaction.transValue / selectedNumber) ₪</p>
@@ -49,11 +53,18 @@ else
     <button>הגדרות מתקדמות</button>
 @*    להוסיף את כל מה שהסקשן הזה מכיל*@
 </div>
-<button>שמירה והזנה נוספת</button>
-<button>שמירה וסיום</button>
+<button @onclick="saveAndRepeatTransactions">שמירה והזנה נוספת</button>
+<button @onclick="saveAndEndTransactions">שמירה וסיום</button>
+
 @code {
     [Parameter]
     public string subCategoryTitle { get; set; }
+
+    [Parameter]
+    public int subCategoryIDTOGet { get; set; }
+
+    [Parameter]
+    public EventCallback<bool> isTransactionOverlayOpen { get; set; } 
 
     TransactionToAdd newTransaction = new TransactionToAdd();
 
@@ -63,10 +74,40 @@ else
 
     private int selectedNumber = 1; // Default value
 
-
-    public async Task addTransaction()
+    public async Task saveAndEndTransactions()
     {
-        
-    }
+        newTransaction.subCategoryID = subCategoryIDTOGet;
+        newTransaction.transType = true;
 
-}
+        var transToSaveRes = await Http.PostAsJsonAsync("api/Transactions/AddTransaction", newTransaction);
+        if (transToSaveRes.IsSuccessStatusCode)
+        {
+            Console.WriteLine("ההזנה נשמרה בהצלחה :)");
+            isTransactionOverlayOpen.InvokeAsync(false);
+        }
+        else
+        {
+            Console.WriteLine("הזנה נכשלה");
+        }
+                                              
+     }
+
+    public async Task saveAndRepeatTransactions()
+    {
+        newTransaction.subCategoryID = subCategoryIDTOGet;
+        newTransaction.transType = true;
+
+        var transToSaveRes = await Http.PostAsJsonAsync("api/Transactions/AddTransaction", newTransaction);
+        if (transToSaveRes.IsSuccessStatusCode)
+        {
+            Console.WriteLine("ההזנה נשמרה בהצלחה :)");
+            newTransaction = new TransactionToAdd();
+        }
+        else
+        {
+            Console.WriteLine("הזנה נכשלה");
+        }
+
+    }
+                    
+}   
