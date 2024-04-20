@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Programmin2_classroom.Shared.Models.present.toShow
+namespace Programmin2_classroom.Shared.Models.present.toEdit
 {
     public class TransactionToEdit
     {
@@ -15,7 +15,8 @@ namespace Programmin2_classroom.Shared.Models.present.toShow
         public DateTime transDate { get; set; }
         public string description { get; set; }
         public bool fixedMonthly { get; set; }
-        public int tagID { get; set; }
+        public int? tagID { get; set; }
+        public int? parentTransID { get; set; }
         public string transTitle { get; set; }
     }
 }
