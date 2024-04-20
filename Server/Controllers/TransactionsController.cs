@@ -40,25 +40,11 @@ namespace Programmin2_classroom.Server.Controllers
 
             if (newTransId != 0)
             {
-                object param = new
-                {
-                    id = newCategoryId,
-                    userID = categoryToAdd.userID
-                };
 
-                string GetCategoryQuery = "SELECT id, categroyTitle, icon, color FROM categories WHERE id = @id AND userID = @userID";
-                var recordsCategory = await _db.GetRecordsAsync<CategoryToShow>(GetCategoryQuery, param);
-                CategoryToShow category = recordsCategory.FirstOrDefault();
-
-                if (category != null)
-                {
-                    return Ok(category);
-                }
-                return BadRequest("category not found");
-
+                    return Ok("Transaction added");
             }
 
-            return BadRequest("category not created");
+            return BadRequest("Transaction not created");
         }
     }
 }
