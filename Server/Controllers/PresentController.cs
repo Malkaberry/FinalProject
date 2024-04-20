@@ -356,6 +356,57 @@ namespace Programmin2_classroom.Server.Controllers
             return BadRequest("update sub category faild");
         }
 
+        [HttpPost("AddSubCategory")] // יצירת תת קטגוריה חדשה
+        public async Task<IActionResult> AddSubCategory(SubCategoryToAdd subCategoryToAdd) 
+        {
+            object subCategoryToAddParam = new
+            {
+                categoryID = subCategoryToAdd.categoryID,
+                subCategoryTitle = subCategoryToAdd.subCategoryTitle,
+                monthlyPlannedBudget = subCategoryToAdd.monthlyPlannedBudget,
+                importance = subCategoryToAdd.importance
+            };
+
+            string insertSubCategoryQuery = "INSERT INTO subcategories (categoryID,subCategoryTitle,monthlyPlannedBudget, importance) values (@categoryID ,@subCategoryTitle ,@monthlyPlannedBudget ,@importance)";
+
+            int newSubCategoryId = await _db.InsertReturnId(insertSubCategoryQuery, subCategoryToAddParam);
+
+            if (newSubCategoryId != 0)
+            {
+                object param = new
+                {
+                    id = newSubCategoryId
+                };
+
+                string GetSubCategoryQuery = "SELECT categoryID,subCategoryTitle, monthlyPlannedBudget, importance FROM subcategories WHERE id = @id";
+                var recordsSubCategory = await _db.GetRecordsAsync<SubCategoryToAdd>(GetSubCategoryQuery, param);
+                SubCategoryToAdd subCategory = recordsSubCategory.FirstOrDefault();
+
+                if (subCategory != null)
+                {
+                    return Ok(subCategory);
+                }
+                return BadRequest("sub category not found");
+
+            }
+
+            return BadRequest("sub category not created");
+        }
+
+        [HttpDelete("deleteSubCategory/{SubCategoryIdToDelete}")] // מחיקת תת קטגוריה
+        public async Task<IActionResult> DeleteSubCategory(int SubCategoryIdToDelete)
+        {
+            string DeleteQuery = "DELETE FROM subcategories WHERE id=@ID";
+            bool isSubCategoryDeleted = await _db.SaveDataAsync(DeleteQuery, new { ID = SubCategoryIdToDelete });
+
+            if (isSubCategoryDeleted)
+            {
+                return Ok();
+            }
+
+            return BadRequest("Failed to delete sub category");
+        }
+
     }
 }
 

@@ -3,7 +3,6 @@ using TriangleDbRepository;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
 
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
@@ -35,5 +34,6 @@ app.MapRazorPages();
 app.MapControllers();
 app.MapFallbackToFile("index.html");
 
-app.Run();
 
+
+app.Run();
