@@ -21,54 +21,52 @@ namespace Programmin2_classroom.Server.Controllers
         [HttpGet("userToShow/{userID}")] // שליפה של התצוגה הראשונית בסביבה השניה לפני לחיצות על כפתורים
         public async Task<IActionResult> GetUser(int userID)
         {
-            object param = new
+            // Initialize the SQL queries
+            var userQuery = "SELECT id, firstName, profilePicOrIcon FROM users WHERE id = @ID";
+            var categoryQuery = "SELECT id, categroyTitle, icon, color FROM categories WHERE userID = @ID";
+            var subCategoryBudgetQuery = "SELECT COALESCE(SUM(monthlyPlannedBudget), 0) FROM subcategories WHERE categoryID = @ID";
+            var transactionSumQuery = $"SELECT COALESCE(SUM(transValue), 0) FROM transactions WHERE subCategoryID = @ID AND transType = @TransType";
+
+            // Get user details
+            var user = (await _db.GetRecordsAsync<userToShow>(userQuery, new { ID = userID })).FirstOrDefault();
+            if (user == null)
             {
-                ID = userID
-            };
+                return BadRequest("User not found");
+            }
 
-            string GetUserQuery = "SELECT id, firstName, profilePicOrIcon FROM users WHERE id = @ID";
-            string GetCategoryQuery = "SELECT id, categroyTitle, icon, color FROM categories WHERE userID = @ID";
-            string GetSpendingsQuery = "SELECT SUM(transValue) FROM transactions WHERE userID = @ID AND transType = 1";
-            string GetIncomesQuery = "SELECT SUM(transValue) FROM transactions WHERE userID = @ID AND transType = 2";
-
-            var recordUser = await _db.GetRecordsAsync<userToShow>(GetUserQuery, param);
-            userToShow user = recordUser.FirstOrDefault();
-
-            if (user != null)
+            // Get categories for the user
+            var categories = (await _db.GetRecordsAsync<CategoryToShow>(categoryQuery, new { ID = userID })).ToList();
+            if (categories.Any())
             {
-                var recordsCategrories = await _db.GetRecordsAsync<CategoryToShow>(GetCategoryQuery, param);
-                user.categoriesFullList = recordsCategrories.ToList();
+                user.categoriesFullList = categories;
 
-                double budgetSum = 0;
-
-                if (user.categoriesFullList != null)
+                double totalBudget = 0;
+                foreach (var category in categories)
                 {
+                    // Get total budget for each category
+                    double categoryBudget = (await _db.GetRecordsAsync<double>(subCategoryBudgetQuery, new { ID = category.id })).FirstOrDefault();
+                    totalBudget += categoryBudget;
 
-                    foreach (var category in user.categoriesFullList)
+                    if (category.id == categories.First().id) // Assuming you want to calculate transactions for the first category only.
                     {
-                        string GetBudgetSumQuery = "SELECT SUM(monthlyPlannedBudget) FROM subcategories WHERE categoryID = @categoryID";
-                        object subCategoryParam = new
-                        {
-                            categoryID = category.id
-                        };
-
-                        var recordsBudget = await _db.GetRecordsAsync<double>(GetBudgetSumQuery, subCategoryParam);
-                        double budgetValue = recordsBudget.FirstOrDefault();
-                        user.budgetFullValue += budgetValue; // Add to the total sum
-                        budgetSum = user.budgetFullValue;
+                        // Calculate transaction sums for the first category
+                        user.spendingValueFullList = (await _db.GetRecordsAsync<double>(transactionSumQuery, new { ID = category.id, TransType = 1 })).FirstOrDefault();
+                        user.incomeValueFullList = (await _db.GetRecordsAsync<double>(transactionSumQuery, new { ID = category.id, TransType = 2 })).FirstOrDefault();
                     }
                 }
-                var recordsSpendings = await _db.GetRecordsAsync<double>(GetSpendingsQuery, param);
-                user.spendingValueFullList = recordsSpendings.FirstOrDefault();
 
-                user.budgetFullValue = Math.Round((budgetSum / user.spendingValueFullList) * 100);
-
-                var recordsIncomes = await _db.GetRecordsAsync<double>(GetIncomesQuery, param);
-                user.incomeValueFullList = recordsIncomes.FirstOrDefault();
-
-                return Ok(user);
+                // Calculate the budget usage percentage
+                user.budgetFullValue = CalculateBudgetPercentage(totalBudget, user.spendingValueFullList);
             }
-            return BadRequest("user not found");
+
+            return Ok(user);
+        }
+
+        private double CalculateBudgetPercentage(double budget, double spending)
+        {
+            if (spending == 0)
+                return 0;
+            return Math.Round((budget / spending) * 100, 2);
         }
 
 
@@ -136,7 +134,6 @@ namespace Programmin2_classroom.Server.Controllers
             }
             return BadRequest("category not found");
         }
-
 
 
         [HttpPost("EditCategory")]  // עריכת קטגוריה
@@ -287,10 +284,13 @@ namespace Programmin2_classroom.Server.Controllers
                 ID = userID
             };
 
-            string GetTagsAndSpendingsQuery = @"SELECT t.tagID, tg.tagTitle, tg.tagColor, SUM(t.transValue) as totalValue 
+            string GetTagsAndSpendingsQuery = @"
+        SELECT t.tagID, tg.tagTitle, tg.tagColor, SUM(t.transValue) as totalValue 
         FROM transactions t
         JOIN tags tg ON t.tagID = tg.id
-        WHERE t.userID = @ID AND t.transType = 1 
+        JOIN subcategories sc ON t.subCategoryID = sc.id
+        JOIN categories c ON sc.categoryID = c.id
+        WHERE c.userID = @ID AND t.transType = 1 
         GROUP BY t.tagID, tg.tagTitle, tg.tagColor 
         ORDER BY totalValue DESC 
         LIMIT 3";
@@ -355,11 +355,6 @@ namespace Programmin2_classroom.Server.Controllers
             }
             return BadRequest("update sub category faild");
         }
-
-
-
-
-
 
     }
 }
