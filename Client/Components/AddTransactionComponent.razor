@@ -1,60 +1,79 @@
 ﻿@using Programmin2_classroom.Shared.Models.present.toAdd
+@using Programmin2_classroom.Shared.Models.present.toShow
 @inject HttpClient Http;
 
 <h3>הוספה לתת קטגוריה: @subCategoryTitle </h3>
 <div>
 
-<button>פרטי ההזנה שלי</button>
-<p>פרטי ההזנה</p>
-<input type="text" @bind="newTransaction.transTitle"/>
+    <button>פרטי ההזנה שלי</button>
+    <p>פרטי ההזנה</p>
+    <input type="text" @bind="newTransaction.transTitle" />
 
-<input type="date" @bind="newTransaction.transDate" />
-@if (selectedDate.HasValue)
-{
-    <p>Selected Date: @selectedDate.Value.ToShortDateString()</p>
-}
-else
-{
-        <p>No date selected.</p>
-}
-<p>סכום ההזנה</p>
-<input type="number" @bind="newTransaction.transValue" />
-<p>ההזנה בתשלומים?</p>
-<input type="checkbox" @bind="splitPayment" />
-@if (splitPayment)
-{
-    <select @bind="selectedNumber">
-        @for (int i = 1; i <= 12; i++)
-        {
+    <input type="date" @bind="newTransaction.transDate" />
+
+    <p>סכום ההזנה</p>
+    <input type="number" @bind="newTransaction.transValue" />
+    <p>ההזנה בתשלומים?</p>
+    <input type="checkbox" @bind="splitPayment" />
+    @if (splitPayment)
+    {
+        <select @bind="selectedNumber">
+            @for (int i = 1; i <= 12; i++)
+            {
                 <option value="@i">@i תשלומים</option>
-              
-        }
+
+            }
             selectedNumber = i;
+        </select>
+
+        <p>סכום כל תשלום בממוצע @(newTransaction.transValue / selectedNumber) ₪</p>
+    }
+    <p>אמצעי תשלום</p>
+    <select @bind="newTransaction.valueType">
+
+        <option value="מזומן">מזומן</option>
+        <option value="אשראי">אשראי</option>
+        <option value="ביט/פייבוקס">ביט/פייבוקס</option>
+        <option value="אחר">אחר</option>
+
     </select>
-
-    <p>סכום כל תשלום בממוצע @(newTransaction.transValue / selectedNumber) ₪</p>
-}
-<p>אמצעי תשלום</p>
-<select @bind="newTransaction.valueType">
-    
-    <option value="מזומן">מזומן</option>
-    <option value="אשראי">אשראי</option>
-    <option value="ביט/פייבוקס">ביט/פייבוקס</option>
-    <option value="אחר">אחר</option>
-
-</select>
-@if (!string.IsNullOrEmpty(newTransaction.valueType))
-{
-    <p>שיטת תשלום נבחרת: @newTransaction.valueType</p>
-}
-<button>הגדרת ההוצאה כחוזרת</button> @*לעשות קומפוננטה של חלון הגדרת הוצאה כחוזרת*@
+    @if (!string.IsNullOrEmpty(newTransaction.valueType))
+    {
+        <p>שיטת תשלום נבחרת: @newTransaction.valueType</p>
+    }
+    <button>הגדרת ההוצאה כחוזרת</button> @*לעשות קומפוננטה של חלון הגדרת הוצאה כחוזרת*@
 </div>
 <div>
     <button>הגדרות מתקדמות</button>
-@*    להוסיף את כל מה שהסקשן הזה מכיל*@
+    @*    להוסיף את כל מה שהסקשן הזה מכיל*@
 </div>
 <button @onclick="saveAndRepeatTransactions">שמירה והזנה נוספת</button>
 <button @onclick="saveAndEndTransactions">שמירה וסיום</button>
+
+@if (overdraftDetected)
+{
+    <div>
+        <h3>חרגת...</h3>
+        <p>נראה שהוצאת ב @subCategoryTitle @closeOverdraftOpts[closeOverdraftOpts.Count-1].remainingBudget ₪ </p>
+        <p>שזה @currentGap ₪ יותר </p>
+        <p>מהתקציב שהגדרת: @closeOverdraftOpts[closeOverdraftOpts.Count-1].monthlyPlannedBudget ₪ </p>
+        <p>כדאי להגדיל את התקציב.</p>
+        <p>הסכום שאני רוצה להעביר:</p>
+        <input type="number" @bind="currentGap" /><span>₪</span>
+        <p>מאיזו תת קטגוריה יועבר הסכום?</p>
+
+        @foreach (OverBudgetToShow subcategoryOpt in closeOverdraftOpts)
+        {
+            @if (subcategoryOpt.id != subCategoryIDTOGet)
+            {
+                <p>@subcategoryOpt.subCategoryTitle</p>
+                <p>תקציב:</p>
+                <p>נוכחי: @subcategoryOpt.monthlyPlannedBudget</p>
+                <p>עתידי: @(subcategoryOpt.monthlyPlannedBudget - currentGap)</p>
+            }
+        }
+    </div>
+}
 
 @code {
     [Parameter]
@@ -64,15 +83,22 @@ else
     public int subCategoryIDTOGet { get; set; }
 
     [Parameter]
-    public EventCallback<bool> isTransactionOverlayOpen { get; set; } 
+    public EventCallback<bool> isTransactionOverlayOpen { get; set; }
 
-    TransactionToAdd newTransaction = new TransactionToAdd();
+    TransactionToAdd newTransaction = new TransactionToAdd()
+        {
+            transDate = DateTime.Today // Set the transaction date to today
+        };
 
-    private DateTime? selectedDate;
+    private DateTime? selectedDate = DateTime.Today; // Initialize selectedDate to today
 
     bool splitPayment = false;
 
     private int selectedNumber = 1; // Default value
+
+    public bool overdraftDetected;
+    List<OverBudgetToShow> closeOverdraftOpts = new List<OverBudgetToShow>();
+    double currentGap = 0;
 
     public async Task saveAndEndTransactions()
     {
@@ -82,15 +108,19 @@ else
         var transToSaveRes = await Http.PostAsJsonAsync("api/Transactions/AddTransaction", newTransaction);
         if (transToSaveRes.IsSuccessStatusCode)
         {
-            Console.WriteLine("ההזנה נשמרה בהצלחה :)");
-            isTransactionOverlayOpen.InvokeAsync(false);
+            await checkOverdraft();
+            if (!overdraftDetected)
+            {
+                Console.WriteLine("ההזנה נשמרה בהצלחה :)");
+                isTransactionOverlayOpen.InvokeAsync(false);
+            }
         }
         else
         {
             Console.WriteLine("הזנה נכשלה");
         }
-                                              
-     }
+
+    }
 
     public async Task saveAndRepeatTransactions()
     {
@@ -101,12 +131,34 @@ else
         if (transToSaveRes.IsSuccessStatusCode)
         {
             Console.WriteLine("ההזנה נשמרה בהצלחה :)");
-            newTransaction = new TransactionToAdd();
+            await checkOverdraft();
+            if (!overdraftDetected)
+            {
+                newTransaction = new TransactionToAdd();
+            }
         }
         else
         {
             Console.WriteLine("הזנה נכשלה");
         }
     }
-                    
+
+    public async Task checkOverdraft()
+    {
+        var overdraftRes = await Http.GetAsync("api/Transactions/showOverdraft/" + newTransaction.subCategoryID);
+        if (overdraftRes.IsSuccessStatusCode)
+        {
+            overdraftDetected = true;
+            closeOverdraftOpts = await overdraftRes.Content.ReadFromJsonAsync<List<OverBudgetToShow>>();
+            currentGap = (closeOverdraftOpts[closeOverdraftOpts.Count - 1].remainingBudget) - (closeOverdraftOpts[closeOverdraftOpts.Count - 1].monthlyPlannedBudget);
+
+
+        }
+        else
+        {
+            Console.WriteLine("No overdraft detected");
+        }
+    }
+
+
 }   

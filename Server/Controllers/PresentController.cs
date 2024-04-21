@@ -378,7 +378,7 @@ namespace Programmin2_classroom.Server.Controllers
                     id = newSubCategoryId
                 };
 
-                string GetSubCategoryQuery = "SELECT categoryID,subCategoryTitle, monthlyPlannedBudget, importance FROM subcategories WHERE id = @id";
+                string GetSubCategoryQuery = "SELECT id,categoryID,subCategoryTitle, monthlyPlannedBudget, importance FROM subcategories WHERE id = @id";
                 var recordsSubCategory = await _db.GetRecordsAsync<SubCategoryToAdd>(GetSubCategoryQuery, param);
                 SubCategoryToAdd subCategory = recordsSubCategory.FirstOrDefault();
 

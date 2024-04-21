@@ -8,6 +8,7 @@ namespace Programmin2_classroom.Shared.Models.present.toAdd
 {
     public class SubCategoryToAdd
     {
+        public int id { get; set; }
         public int categoryID { get; set; }
         public string subCategoryTitle { get; set; }
         public int monthlyPlannedBudget { get; set; }

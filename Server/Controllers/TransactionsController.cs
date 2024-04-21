@@ -41,10 +41,74 @@ namespace Programmin2_classroom.Server.Controllers
 
             if (newTransId != 0)
             {
-                return Ok("Transaction added");
+                return Ok(newTransId);
             }
 
             return BadRequest("Transaction not created");
         }
+
+        [HttpGet("showOverdraft/{subCatID}")]
+        public async Task<IActionResult> showOverdraft(int subCatID)
+        {
+            List<OverBudgetToShow> subcategoriesToCloseGap = new List<OverBudgetToShow>();
+            OverBudgetToShow currentOverdraft = new OverBudgetToShow();
+
+            object param = new
+            {
+                ID = subCatID
+            };
+
+            string GetCategoryCurrentSumQuery = "SELECT COALESCE(SUM(transValue), 0) FROM transactions WHERE subCategoryID = @ID";
+            var recordSubCatCurrentSum = await _db.GetRecordsAsync<double>(GetCategoryCurrentSumQuery, param);
+            if (recordSubCatCurrentSum != null)
+            {
+                string GetSubCategoryBudgetQuery = "SELECT monthlyPlannedBudget FROM subcategories WHERE id = @ID";
+                var budgetRes = await _db.GetRecordsAsync<int>(GetSubCategoryBudgetQuery, param);
+                if (budgetRes != null)
+                {
+                    string GetSubCategoryNameQuery = "SELECT subCategoryTitle FROM subcategories WHERE id = @ID";
+                    var recordGetSubCategoryName = await _db.GetRecordsAsync<string>(GetSubCategoryNameQuery, param);
+                    if (recordGetSubCategoryName != null)
+                    {
+                        //currentOverdraft is different than the other list items, its remaining budget is the sum of all its expenses, when in the other list items it is the budget free to close the gap
+                        currentOverdraft.subCategoryTitle = recordGetSubCategoryName.FirstOrDefault();
+                        currentOverdraft.monthlyPlannedBudget = budgetRes.FirstOrDefault();
+                        currentOverdraft.remainingBudget = recordSubCatCurrentSum.FirstOrDefault();
+                        currentOverdraft.id = subCatID;
+
+                        double gap = (currentOverdraft.remainingBudget - currentOverdraft.monthlyPlannedBudget);
+                        Console.WriteLine("the budget gap is- " + gap);
+
+
+
+                        object gapParam = new
+                        {
+                            gap = gap
+                        };
+
+                        string getFittingSubCats = "SELECT subcategories.id, subcategories.subCategoryTitle, subcategories.monthlyPlannedBudget, (monthlyPlannedBudget - COALESCE(SUM(transValue), 0)) AS remainingBudget FROM subcategories LEFT JOIN transactions ON subcategories.id = transactions.subCategoryID WHERE importance = 0 GROUP BY subcategories.id HAVING remainingBudget > @gap";
+
+                        var optionalSubcategories = await _db.GetRecordsAsync<OverBudgetToShow>(getFittingSubCats, gapParam);
+
+                        if (optionalSubcategories != null)
+                        {
+                            subcategoriesToCloseGap = optionalSubcategories.ToList();
+                            subcategoriesToCloseGap.Add(currentOverdraft);
+
+                            return Ok(subcategoriesToCloseGap);
+
+                        }
+                        return BadRequest("no optional subcategories found");
+                    }
+
+                    return BadRequest("nosub category name found");
+
+                }
+                return BadRequest("no budget found in this subcategory");
+            }
+            return BadRequest("no linked transactions found to this subcategory");
+        }
+
+
     }
 }

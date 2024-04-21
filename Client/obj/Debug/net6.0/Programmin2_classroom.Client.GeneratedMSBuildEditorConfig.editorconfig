@@ -5,51 +5,49 @@ build_property.UsingMicrosoftNETSdkWeb =
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = false
 build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = browser
-build_property.EnableSingleFileAnalyzer = 
-build_property.EnableTrimAnalyzer = true
-build_property.IncludeAllContentForSelfExtract = 
 build_property.RootNamespace = Programmin2_classroom.Client
 build_property.RootNamespace = Programmin2_classroom.Client
-build_property.ProjectDir = C:\Users\Inbal\Documents\שנה ג\פרוייקט גמר\FinalProject\Client\
+build_property.ProjectDir = C:\Users\97258\OneDrive\Desktop\FinalProject_GithubRepository\FinalProject\Client\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Inbal\Documents\שנה ג\פרוייקט גמר\FinalProject\Client
+build_property.MSBuildProjectDirectory = C:\Users\97258\OneDrive\Desktop\FinalProject_GithubRepository\FinalProject\Client
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Inbal/Documents/שנה ג/פרוייקט גמר/FinalProject/Client/App.razor]
+[C:/Users/97258/OneDrive/Desktop/FinalProject_GithubRepository/FinalProject/Client/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Inbal/Documents/שנה ג/פרוייקט גמר/FinalProject/Client/Components/AddTransactionComponent.razor]
+[C:/Users/97258/OneDrive/Desktop/FinalProject_GithubRepository/FinalProject/Client/Components/AddTransactionComponent.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBZGRUcmFuc2FjdGlvbkNvbXBvbmVudC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Inbal/Documents/שנה ג/פרוייקט גמר/FinalProject/Client/Components/CategoryComponent.razor]
+[C:/Users/97258/OneDrive/Desktop/FinalProject_GithubRepository/FinalProject/Client/Components/CategoryComponent.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xDYXRlZ29yeUNvbXBvbmVudC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Inbal/Documents/שנה ג/פרוייקט גמר/FinalProject/Client/Components/SubCategoryComponent.razor]
+[C:/Users/97258/OneDrive/Desktop/FinalProject_GithubRepository/FinalProject/Client/Components/SubCategoryComponent.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xTdWJDYXRlZ29yeUNvbXBvbmVudC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Inbal/Documents/שנה ג/פרוייקט גמר/FinalProject/Client/Pages/Index.razor]
+[C:/Users/97258/OneDrive/Desktop/FinalProject_GithubRepository/FinalProject/Client/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Inbal/Documents/שנה ג/פרוייקט גמר/FinalProject/Client/Shared/SurveyPrompt.razor]
+[C:/Users/97258/OneDrive/Desktop/FinalProject_GithubRepository/FinalProject/Client/Shared/SurveyPrompt.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Inbal/Documents/שנה ג/פרוייקט גמר/FinalProject/Client/_Imports.razor]
+[C:/Users/97258/OneDrive/Desktop/FinalProject_GithubRepository/FinalProject/Client/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Inbal/Documents/שנה ג/פרוייקט גמר/FinalProject/Client/Shared/MainLayout.razor]
+[C:/Users/97258/OneDrive/Desktop/FinalProject_GithubRepository/FinalProject/Client/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-ci014wbzaq
 
-[C:/Users/Inbal/Documents/שנה ג/פרוייקט גמר/FinalProject/Client/Shared/NavMenu.razor]
+[C:/Users/97258/OneDrive/Desktop/FinalProject_GithubRepository/FinalProject/Client/Shared/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-3b2l9hbgm7
