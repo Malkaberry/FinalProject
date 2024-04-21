@@ -2,6 +2,18 @@
 bin/
 obj/
 out/
+FinalProject/Client/bin/
+FinalProject/Client/obj/
+FinalProject/Server/bin/
+FinalProject/Server/obj/
+FinalProject/Shared/bin/
+FinalProject/Shared/obj/
+Client/bin/
+Client/obj/
+Server/bin/
+Server/obj/
+Shared/bin/
+Shared/obj/
 
 # Files #
 *.suo
