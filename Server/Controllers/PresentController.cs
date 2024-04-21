@@ -25,7 +25,7 @@ namespace Programmin2_classroom.Server.Controllers
             var userQuery = "SELECT id, firstName, profilePicOrIcon FROM users WHERE id = @ID";
             var categoryQuery = "SELECT id, categroyTitle, icon, color FROM categories WHERE userID = @ID";
             var subCategoryBudgetQuery = "SELECT COALESCE(SUM(monthlyPlannedBudget), 0) FROM subcategories WHERE categoryID = @ID";
-            var transactionSumQuery = $"SELECT COALESCE(SUM(transValue), 0) FROM transactions WHERE subCategoryID = @ID AND transType = @TransType";
+            var transactionSumQuery = "SELECT COALESCE(SUM(transValue), 0) FROM transactions WHERE subCategoryID = @ID AND transType = @TransType";
 
             // Get user details
             var user = (await _db.GetRecordsAsync<userToShow>(userQuery, new { ID = userID })).FirstOrDefault();

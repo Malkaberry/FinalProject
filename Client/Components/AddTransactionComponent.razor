@@ -62,19 +62,61 @@
         <input type="number" @bind="currentGap" /><span>₪</span>
         <p>מאיזו תת קטגוריה יועבר הסכום?</p>
 
-        @foreach (OverBudgetToShow subcategoryOpt in closeOverdraftOpts)
-        {
-            @if (subcategoryOpt.id != subCategoryIDTOGet)
-            {
-                <p>@subcategoryOpt.subCategoryTitle</p>
-                <p>תקציב:</p>
-                <p>נוכחי: @subcategoryOpt.monthlyPlannedBudget</p>
-                <p>עתידי: @(subcategoryOpt.monthlyPlannedBudget - currentGap)</p>
-            }
-        }
+        <table>
+            <thead>
+                <tr>
+                    <th>העברה מ:</th>
+                    <th>העברה ל:</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>                   
+                    <td>
+                        <select @bind="chosenSubCategory.subCategoryTitle">
+
+                            @foreach (OverBudgetToShow subcategoryOpt in closeOverdraftOpts)
+                            {
+                                 
+                                @if (subcategoryOpt.id != subCategoryIDTOGet)
+                                {
+                                    <option value="@subcategoryOpt.subCategoryTitle">
+                                        @subcategoryOpt.subCategoryTitle
+                                    </option>
+
+                                    if (subcategoryOpt.subCategoryTitle != null)
+                                    {
+                                        chosenSubCategory = subcategoryOpt;
+                                    }
+                                    else
+                                    {
+                                        Console.WriteLine("למה אין שם??");
+                                    }
+                                }
+                            }
+
+                        </select>
+                    </td>
+                    <td>
+                        @(overDraftSubCategory.subCategoryTitle = closeOverdraftOpts[closeOverdraftOpts.Count - 1].subCategoryTitle)
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <p>תקציב:</p>
+                    <p>נוכחי: @chosenSubCategory.monthlyPlannedBudget</p>
+                    <p>עתידי: @(chosenSubCategory.monthlyPlannedBudget - currentGap)</p>
+                </tr>
+                <tr>
+                    <p>תקציב:</p>
+                    <p>נוכחי: @(closeOverdraftOpts[closeOverdraftOpts.Count - 1].monthlyPlannedBudget)</p>
+                    <p>עתידי: @(closeOverdraftOpts[closeOverdraftOpts.Count - 1].monthlyPlannedBudget + currentGap)</p>
+                </tr>
+              
+            </tbody>
+        </table>
     </div>
 }
-
+ 
 @code {
     [Parameter]
     public string subCategoryTitle { get; set; }
@@ -99,6 +141,13 @@
     public bool overdraftDetected;
     List<OverBudgetToShow> closeOverdraftOpts = new List<OverBudgetToShow>();
     double currentGap = 0;
+
+
+
+    OverBudgetToShow chosenSubCategory = new OverBudgetToShow();
+    OverBudgetToShow overDraftSubCategory = new OverBudgetToShow();
+
+
 
     public async Task saveAndEndTransactions()
     {
@@ -151,7 +200,6 @@
             overdraftDetected = true;
             closeOverdraftOpts = await overdraftRes.Content.ReadFromJsonAsync<List<OverBudgetToShow>>();
             currentGap = (closeOverdraftOpts[closeOverdraftOpts.Count - 1].remainingBudget) - (closeOverdraftOpts[closeOverdraftOpts.Count - 1].monthlyPlannedBudget);
-
 
         }
         else
