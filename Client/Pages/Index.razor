@@ -61,13 +61,8 @@
         foreach (CategoryToShow category in user.categoriesFullList)
         {
 
-            <CategoryComponent Category=category>
-
-            </CategoryComponent>
+            <CategoryComponent Category=category categoryTitle="category.categroyTitle"> </CategoryComponent>
             
-
-
-
         }
 
 
@@ -89,7 +84,7 @@
 
 
     //[CascadingParameter]
-    //public int UserId { get; set; }
+    //public int userID { get; set; }
 
     userToShow user;
     //List<CategoryToShow> categoriesList;

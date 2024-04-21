@@ -16,18 +16,85 @@
             <SubCategoryComponent subCategoryTitle="@subcategory.subCategoryTitle" totalSpendings="@subcategory.transactionsValue" budget="@subcategory.monthlyPlannedBudget" subCategoryIDToGet="@subcategory.id"></SubCategoryComponent>
         }
     }
+
+    @if (isAccordionClick)
+    {
+        <button @onclick="getUserCategories">תת קטגוריה חדשה +</button>
+    }
+
+    @if (isSubCategoryAddOverlayOpen)
+    {
+        <div>
+            <div>
+                <h2>הוספת תת קטגוריה</h2>
+                <button class="modal-close-btn">&times;</button>
+            </div>
+
+            <span>הוספת תת קטגוריה ל</span>
+
+            @if (userCategories.Count > 0)
+            {
+                <select @bind="Category.categroyTitle">
+
+                @foreach (AllUserCategories userCategory in userCategories)
+                {
+                    if (Category.categroyTitle != userCategory.categroyTitle)
+                    {
+                        <option value=@userCategory.categroyTitle> @userCategory.categroyTitle;</option>
+                    }
+                 
+                }
+                </select>
+            }
+
+            <div class="input-group">
+                <label for="amount">הכנס סכום</label>
+                <input type="text" id="amount" placeholder="הכנס סכום" />
+            </div>
+
+            <div class="input-group">
+                <label for="description">תיאור התקציב</label>
+                <input type="text" id="description" placeholder="תיאור התקציב" />
+            </div>
+
+            <button class="submit-btn">שמירה ויצירת הזנה</button>
+            <button class="submit-btn">שמירה וסיום</button>
+
+            <p class="footer-text">
+                לקבלת עזרה - פנה למוקד, צאט - שירותי. תל"י.
+                העיצוב של הטקסטים והכפתורים עשויים להשתנות בהתאם לעיצוב שלך.
+            </p>
+        </div>
+    }
+
+
 </div>
 
 
 @code {
+
+    [CascadingParameter]
+    public int userID { get; set; }
+
     [Parameter]
     public CategoryToShow Category { get; set; }
 
+    [Parameter]
+    public string categoryTitle { get; set; }
+
+    public bool isAccordionClick = false;
+    public bool isSubCategoryAddOverlayOpen = false;
+
     List<SubCategoryToShow> subCategories = new List<SubCategoryToShow>();
+    List<AllUserCategories> userCategories = new List<AllUserCategories>();
+
+    SubCategoryToAdd newSubCategory = new SubCategoryToAdd();
+    AllUserCategories userCategory = new AllUserCategories();
 
     public async Task getSubCategories()
     {
-        var subCatRes = await Http.GetAsync("api/Present/subCategoryToShow/"+ Category.id);
+        isAccordionClick = true;
+        var subCatRes = await Http.GetAsync("api/Present/subCategoryToShow/" + Category.id);
         if (subCatRes.IsSuccessStatusCode)
         {
             subCategories = subCatRes.Content.ReadFromJsonAsync<List<SubCategoryToShow>>().Result;
@@ -38,5 +105,39 @@
         }
     }
 
+    public async Task getUserCategories()
+    {
+        isSubCategoryAddOverlayOpen = true;
+        userID = 1;
+        var getAllUserCategories = await Http.GetAsync("api/Present/GetUserCategories/" + userID);
+        if (getAllUserCategories.IsSuccessStatusCode)
+        {
+           userCategories = getAllUserCategories.Content.ReadFromJsonAsync<List<AllUserCategories>>().Result;
+        }
+        else
+        {
+            Console.WriteLine("no Categories found");
+        }
+    }
+
+
+
+
+
+    public async Task addSubCategory()
+    {
+
+        var subCatToAddRes = await Http.PostAsJsonAsync("api/Transactions/AddSubCategory", newSubCategory);
+        if (subCatToAddRes.IsSuccessStatusCode)
+        {
+            // להפעיל מחדש פונקציה שמושכת את האלמנטים בדף הבית
+        }
+        else
+        {
+            Console.WriteLine("הזנה נכשלה");
+        }
+    }
+
 }
 
+        

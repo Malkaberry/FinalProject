@@ -407,6 +407,27 @@ namespace Programmin2_classroom.Server.Controllers
             return BadRequest("Failed to delete sub category");
         }
 
+        [HttpGet("GetUserCategories/{userID}")] // שליפת תת קטגוריה לעריכה
+        public async Task<IActionResult> GetUserCategories(int userID)
+        {
+
+            object param = new
+            {
+                ID = userID
+            };
+
+            var usercategoriesQuery = "SELECT id, categroyTitle FROM categories WHERE userID = @ID AND categroyTitle != 'הכנסות';";
+            var recordusercategoriesQuery = await _db.GetRecordsAsync<AllUserCategories>(usercategoriesQuery, param);
+            List<AllUserCategories> allUserCategories = recordusercategoriesQuery.ToList();
+
+            if (allUserCategories != null)
+            {
+                return Ok(allUserCategories);
+            }
+            return BadRequest("Category not found");
+        }
+
+
 
 
 
