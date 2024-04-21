@@ -59,7 +59,7 @@
         <p>מהתקציב שהגדרת: @closeOverdraftOpts[closeOverdraftOpts.Count-1].monthlyPlannedBudget ₪ </p>
         <p>כדאי להגדיל את התקציב.</p>
         <p>הסכום שאני רוצה להעביר:</p>
-        <input type="number" @bind="currentGap" /><span>₪</span>
+        <input type="number" @bind="currentGap" min="@currentGap"/><span>₪</span>
         <p>מאיזו תת קטגוריה יועבר הסכום?</p>
 
         <table>
