@@ -1,0 +1,46 @@
+﻿<Properties StartupConfiguration="{1F2D5CF0-ECF9-4176-B25A-F7A8D4BC5811}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Server/Data/DbRepository.cs">
+    <Files>
+      <File FileName="Server/Programmin2_classroom.Server.csproj" Line="30" Column="13" />
+      <File FileName="Client/wwwroot/index.html" Line="17" Column="22" />
+      <File FileName="Client/App.razor" Line="8" Column="37" />
+      <File FileName="Client/Shared/MainLayout.razor" Line="5" Column="11" />
+      <File FileName="Client/Program.cs" Line="1" Column="1" />
+      <File FileName="Client/_Imports.razor" Line="1" Column="1" />
+      <File FileName="Client/Pages/Index.razor" Line="7" Column="2" />
+      <File FileName="Server/Data/DbRepository.cs" Line="24" Column="1" />
+      <File FileName="Server/appsettings.json" Line="5" Column="15" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Programmin2_classroom" expanded="True">
+            <Node name="Programmin2_classroom.Client" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="PackageDependencies" expanded="True" />
+              </Node>
+              <Node name="Pages" expanded="True" />
+              <Node name="Shared" expanded="True" />
+              <Node name="wwwroot" expanded="True" />
+            </Node>
+            <Node name="Programmin2_classroom.Shared" expanded="True" selected="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="PackageDependencies" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Programmin2__classroom.Server PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

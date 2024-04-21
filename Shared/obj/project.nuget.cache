@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "zqLC8GB+5RKaI/QVoApCR3Fn4OzlcKInwgu/K++/ZQkEi9upWT7rgSoCxUQBcVSSJcKqpkRUNUBMvSjpCgXH1g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Inbal\\Documents\\שנה ג\\פרוייקט גמר\\FinalProject\\Shared\\Programmin2_classroom.Shared.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Inbal\\.nuget\\packages\\dapper\\2.1.35\\dapper.2.1.35.nupkg.sha512"
+  ],
+  "logs": []
+}
