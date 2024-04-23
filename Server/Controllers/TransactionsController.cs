@@ -136,8 +136,7 @@ namespace Programmin2_classroom.Server.Controllers
                 return Ok("התקציב עודכן בהצלחה");
             }
             return BadRequest("update sub category budget failed");
-            
-            
+                       
         }
     }
 }
