@@ -110,5 +110,34 @@ namespace Programmin2_classroom.Server.Controllers
         }
 
 
+        [HttpPost("EditSubCategoriesNewBudgets")]  // עריכת תקציב חדש לאחר העברה בחריגה
+
+        public async Task<IActionResult> EditSubCategoriesNewBudgets([FromBody] List<OverDraftBudgetToEdit> budgetToUpdate)
+        {
+
+            bool isBudgetUpdate = false;
+      
+            foreach(var newBudget in budgetToUpdate)
+            {
+
+                object updateBudgetParam = new
+                {
+                    ID = newBudget.id,
+                    monthlyPlannedBudget = newBudget.monthlyPlannedBudget
+                };
+
+                string UpdateSubCategoryBudgetQuery = "UPDATE subcategories set monthlyPlannedBudget = @monthlyPlannedBudget where id =@ID";
+                isBudgetUpdate = await _db.SaveDataAsync(UpdateSubCategoryBudgetQuery, updateBudgetParam);
+
+            }
+
+            if (isBudgetUpdate)
+            {
+                return Ok("התקציב עודכן בהצלחה");
+            }
+            return BadRequest("update sub category budget failed");
+            
+            
+        }
     }
 }
