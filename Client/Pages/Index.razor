@@ -4,7 +4,7 @@
 @using Programmin2_classroom.Shared.Models.present.toEdit
 @using Programmin2_classroom.Client.Components
 @*@using Programmin2_classroom.Shared.Models.past
-@using Programmin2_classroom.Shared.Models.future*@
+    @using Programmin2_classroom.Shared.Models.future*@
 @*@using Programmin2_classroom.Client.Components*@
 
 @inject HttpClient Http
@@ -12,7 +12,7 @@
 @inject DateService DateService
 
 
-@if(user != null)
+@if (user != null)
 {
     <h1>היי @user.firstName 👋🏼</h1>
 
@@ -24,17 +24,17 @@
         <thead>
             <tr>
                 <th>ניצלתי</th>
-                <th>הכנסתי</th>   
+                <th>הכנסתי</th>
                 <th>הוצאתי</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>@user.budgetFullValue% </td>               
+                <td>@user.budgetFullValue% </td>
                 <td>@user.incomeValueFullList</td>
                 <td>@user.spendingValueFullList</td>
-                
-            </tr>       
+
+            </tr>
         </tbody>
     </table>
 
@@ -61,17 +61,17 @@
         {
 
             <CategoryComponent Category=category categoryTitle="category.categroyTitle"> </CategoryComponent>
-            
+
         }
 
 
     }
 
     <div id="bottomNav">
-    <button>מבט לעבר</button>
+        <button>מבט לעבר</button>
         <button>מבט להווה</button>
         <button>מבט לעתיד</button>
-</div>
+    </div>
 }
 
 
@@ -92,14 +92,15 @@
     private bool isChecked = false;
     string msg = "";
     int userID = 1;
+    int test = 0;
 
 
     protected override async Task OnInitializedAsync()
     {
         // Simulating an asynchronous operation (e.g., fetching data)
-        await Task.Delay(1); // This is just to simulate an async process.
+        await Task.Delay(1); // This is just to simulate an async process.   ffff
 
-        int currentMonthNumber = DateTime.Now.Month; // Gets the current month number
+        int currentMonthNumber = DateTime.Now.Month; // Gets the currentgfgff month number
         currentMonth = GetHebrewMonthName(currentMonthNumber);
         StateHasChanged();
 
@@ -107,7 +108,7 @@
 
         if (userRes.IsSuccessStatusCode)
         {
-            user = userRes.Content.ReadFromJsonAsync<userToShow> ().Result;
+            user = userRes.Content.ReadFromJsonAsync<userToShow>().Result;
         }
         else
         {
@@ -121,7 +122,7 @@
         }
 
 
-       
+
 
 
 
@@ -130,7 +131,7 @@
 
 
     }
-    
+
     private string GetHebrewMonthName(int monthNumber)
     {
         switch (monthNumber)
