@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "HDG1wrjYCgnSJfbgwopEnTcuvrLLWbz/etHe0O5SH+eNpwufXetUu7vo461tFhDaZNBGnVonfkq/WcxQ7zoY4w==",
+  "success": true,
+  "projectFilePath": "/Users/malkaberry/Desktop/FinalProject/Shared/Programmin2_classroom.Shared.csproj",
+  "expectedPackageFiles": [
+    "/Users/malkaberry/.nuget/packages/dapper/2.1.35/dapper.2.1.35.nupkg.sha512"
+  ],
+  "logs": []
+}

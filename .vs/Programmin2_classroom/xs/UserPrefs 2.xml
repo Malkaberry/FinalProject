@@ -1,0 +1,47 @@
+﻿<Properties StartupConfiguration="{1F2D5CF0-ECF9-4176-B25A-F7A8D4BC5811}|Default">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Client/Components/AddTransactionComponent.razor">
+    <Files>
+      <File FileName="Client/Components/AddTransactionComponent.razor" Line="1" Column="1" />
+      <File FileName="Server/appsettings.json" Line="1" Column="1" />
+      <File FileName="Client/Pages/Index.razor" Line="104" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Programmin2_classroom" expanded="True">
+            <Node name="Programmin2_classroom.Client" expanded="True">
+              <Node name="Components" expanded="True">
+                <Node name="AddTransactionComponent.razor" selected="True" />
+              </Node>
+              <Node name="Pages" expanded="True" />
+              <Node name="Properties" expanded="True" />
+            </Node>
+            <Node name="Programmin2_classroom.Server" expanded="True">
+              <Node name="Controllers" expanded="True" />
+            </Node>
+            <Node name="Programmin2_classroom.Shared" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="PackageDependencies" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/malkaberry/Desktop/FinalProject/Client/Pages/Index.razor" relfile="Client/Pages/Index.razor" line="47" column="1" />
+      <Breakpoint file="/Users/malkaberry/Desktop/FinalProject/Client/Components/CategoryComponent.razor" relfile="Client/Components/CategoryComponent.razor" line="114" column="1" />
+      <Breakpoint file="/Users/malkaberry/Desktop/FinalProject/Client/Components/AddTransactionComponent.razor" relfile="Client/Components/AddTransactionComponent.razor" line="201" column="1" />
+      <Breakpoint file="/Users/malkaberry/Desktop/FinalProject/Client/Pages/Index.razor" relfile="Client/Pages/Index.razor" line="104" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.Programmin2__classroom.Server PreferredExecutionTarget="/Applications/Google Chrome.app" />
+</Properties>

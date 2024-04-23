@@ -1,0 +1,54 @@
+﻿<Properties StartupConfiguration="{1F2D5CF0-ECF9-4176-B25A-F7A8D4BC5811}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Client/Pages/Index.razor">
+    <Files>
+      <File FileName="Server/Programmin2_classroom.Server.csproj" Line="1" Column="1" />
+      <File FileName="Client/wwwroot/index.html" Line="17" Column="22" />
+      <File FileName="Client/App.razor" Line="8" Column="37" />
+      <File FileName="Client/Shared/MainLayout.razor" Line="5" Column="11" />
+      <File FileName="Client/Program.cs" Line="1" Column="1" />
+      <File FileName="Client/_Imports.razor" Line="1" Column="1" />
+      <File FileName="Client/Pages/Index.razor" Line="80" Column="1" />
+      <File FileName="Server/Data/DbRepository.cs" Line="24" Column="1" />
+      <File FileName="Server/appsettings.json" Line="10" Column="5" />
+      <File FileName="Client/Components/CategoryComponent.razor" Line="133" Column="12" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Programmin2_classroom" expanded="True">
+            <Node name="Programmin2_classroom.Client" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="PackageDependencies" expanded="True" />
+              </Node>
+              <Node name="Components" expanded="True" />
+              <Node name="Pages" expanded="True" />
+              <Node name="Shared" expanded="True" />
+              <Node name="wwwroot" expanded="True" />
+            </Node>
+            <Node name="Programmin2_classroom.Server" expanded="True">
+              <Node name="Data" expanded="True" />
+            </Node>
+            <Node name="Programmin2_classroom.Shared" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="PackageDependencies" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Programmin2__classroom.Server PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/malkaberry/Desktop/FinalProject/Client/Components/CategoryComponent.razor" relfile="Client/Components/CategoryComponent.razor" line="133" column="1" />
+      <Breakpoint file="/Users/malkaberry/Desktop/FinalProject/Client/Components/CategoryComponent.razor" relfile="Client/Components/CategoryComponent.razor" line="135" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+</Properties>
