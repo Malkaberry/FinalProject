@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Inbal\\Documents\\שנה ג\\פרוייקט גמר\\FinalProject\\Server\\Programmin2_classroom.Server.csproj": {}
+    "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Server\\Programmin2_classroom.Server.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Inbal\\Documents\\שנה ג\\פרוייקט גמר\\FinalProject\\Client\\Programmin2_classroom.Client.csproj": {
+    "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\Programmin2_classroom.Client.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Inbal\\Documents\\שנה ג\\פרוייקט גמר\\FinalProject\\Client\\Programmin2_classroom.Client.csproj",
+        "projectUniqueName": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\Programmin2_classroom.Client.csproj",
         "projectName": "Programmin2_classroom.Client",
-        "projectPath": "C:\\Users\\Inbal\\Documents\\שנה ג\\פרוייקט גמר\\FinalProject\\Client\\Programmin2_classroom.Client.csproj",
-        "packagesPath": "C:\\Users\\Inbal\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Inbal\\Documents\\שנה ג\\פרוייקט גמר\\FinalProject\\Client\\obj\\",
+        "projectPath": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\Programmin2_classroom.Client.csproj",
+        "packagesPath": "C:\\Users\\97258\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Inbal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\97258\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -33,8 +33,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Inbal\\Documents\\שנה ג\\פרוייקט גמר\\FinalProject\\Shared\\Programmin2_classroom.Shared.csproj": {
-                "projectPath": "C:\\Users\\Inbal\\Documents\\שנה ג\\פרוייקט גמר\\FinalProject\\Shared\\Programmin2_classroom.Shared.csproj"
+              "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Shared\\Programmin2_classroom.Shared.csproj": {
+                "projectPath": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Shared\\Programmin2_classroom.Shared.csproj"
               }
             }
           }
@@ -73,7 +73,7 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.NETCore.App.Runtime.Mono.browser-wasm",
-              "version": "[6.0.10, 6.0.10]"
+              "version": "[6.0.13, 6.0.13]"
             }
           ],
           "frameworkReferences": {
@@ -81,7 +81,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {
@@ -90,20 +90,20 @@
         }
       }
     },
-    "C:\\Users\\Inbal\\Documents\\שנה ג\\פרוייקט גמר\\FinalProject\\Server\\Programmin2_classroom.Server.csproj": {
+    "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Server\\Programmin2_classroom.Server.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Inbal\\Documents\\שנה ג\\פרוייקט גמר\\FinalProject\\Server\\Programmin2_classroom.Server.csproj",
+        "projectUniqueName": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Server\\Programmin2_classroom.Server.csproj",
         "projectName": "Programmin2_classroom.Server",
-        "projectPath": "C:\\Users\\Inbal\\Documents\\שנה ג\\פרוייקט גמר\\FinalProject\\Server\\Programmin2_classroom.Server.csproj",
-        "packagesPath": "C:\\Users\\Inbal\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Inbal\\Documents\\שנה ג\\פרוייקט גמר\\FinalProject\\Server\\obj\\",
+        "projectPath": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Server\\Programmin2_classroom.Server.csproj",
+        "packagesPath": "C:\\Users\\97258\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Server\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Inbal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\97258\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -119,11 +119,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Inbal\\Documents\\שנה ג\\פרוייקט גמר\\FinalProject\\Client\\Programmin2_classroom.Client.csproj": {
-                "projectPath": "C:\\Users\\Inbal\\Documents\\שנה ג\\פרוייקט גמר\\FinalProject\\Client\\Programmin2_classroom.Client.csproj"
+              "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\Programmin2_classroom.Client.csproj": {
+                "projectPath": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\Programmin2_classroom.Client.csproj"
               },
-              "C:\\Users\\Inbal\\Documents\\שנה ג\\פרוייקט גמר\\FinalProject\\Shared\\Programmin2_classroom.Shared.csproj": {
-                "projectPath": "C:\\Users\\Inbal\\Documents\\שנה ג\\פרוייקט גמר\\FinalProject\\Shared\\Programmin2_classroom.Shared.csproj"
+              "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Shared\\Programmin2_classroom.Shared.csproj": {
+                "projectPath": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Shared\\Programmin2_classroom.Shared.csproj"
               }
             }
           }
@@ -170,24 +170,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Inbal\\Documents\\שנה ג\\פרוייקט גמר\\FinalProject\\Shared\\Programmin2_classroom.Shared.csproj": {
+    "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Shared\\Programmin2_classroom.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Inbal\\Documents\\שנה ג\\פרוייקט גמר\\FinalProject\\Shared\\Programmin2_classroom.Shared.csproj",
+        "projectUniqueName": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Shared\\Programmin2_classroom.Shared.csproj",
         "projectName": "Programmin2_classroom.Shared",
-        "projectPath": "C:\\Users\\Inbal\\Documents\\שנה ג\\פרוייקט גמר\\FinalProject\\Shared\\Programmin2_classroom.Shared.csproj",
-        "packagesPath": "C:\\Users\\Inbal\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Inbal\\Documents\\שנה ג\\פרוייקט גמר\\FinalProject\\Shared\\obj\\",
+        "projectPath": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Shared\\Programmin2_classroom.Shared.csproj",
+        "packagesPath": "C:\\Users\\97258\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Shared\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Inbal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\97258\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -236,7 +236,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }

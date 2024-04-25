@@ -1,5 +1,6 @@
 ﻿@using Programmin2_classroom.Shared.Models.present.toAdd
 @using Programmin2_classroom.Shared.Models.present.toShow
+@using Programmin2_classroom.Shared.Models.present.toEdit
 @inject HttpClient Http;
 
 <h3>הוספה לתת קטגוריה: @subCategoryTitle </h3>
@@ -29,6 +30,10 @@
         <p>סכום כל תשלום בממוצע @(newTransaction.transValue / selectedNumber) ₪</p>
     }
     <p>אמצעי תשלום</p>
+    @if(newTransaction.valueType == null)
+    {
+        newTransaction.valueType = "מזומן";
+    }
     <select @bind="newTransaction.valueType">
 
         <option value="מזומן">מזומן</option>
@@ -71,49 +76,39 @@
             </thead>
             <tbody>
                 <tr>                   
-                    <td>
-                        <select @bind="chosenSubCategory.subCategoryTitle">
-
+                    <td>                      
+                       <select @onchange="HandleChange">
                             @foreach (OverBudgetToShow subcategoryOpt in closeOverdraftOpts)
                             {
-                                 
                                 @if (subcategoryOpt.id != subCategoryIDTOGet)
                                 {
                                     <option value="@subcategoryOpt.subCategoryTitle">
                                         @subcategoryOpt.subCategoryTitle
                                     </option>
-
-                                    if (subcategoryOpt.subCategoryTitle != null)
-                                    {
-                                        chosenSubCategory = subcategoryOpt;
-                                    }
-                                    else
-                                    {
-                                        Console.WriteLine("למה אין שם??");
-                                    }
                                 }
                             }
-
                         </select>
                     </td>
                     <td>
-                        @(overDraftSubCategory.subCategoryTitle = closeOverdraftOpts[closeOverdraftOpts.Count - 1].subCategoryTitle)
+                        @(overDraftSubCategory.subCategoryTitle = closeOverdraftOpts[closeOverdraftOpts.Count - 1].subCategoryTitle) @*// תת הקטגוריה שחורגת*@
                         
                     </td>
-                </tr>
+                </tr>                    
                 <tr>
                     <p>תקציב:</p>
                     <p>נוכחי: @chosenSubCategory.monthlyPlannedBudget</p>
                     <p>עתידי: @(chosenSubCategory.monthlyPlannedBudget - currentGap)</p>
+                    
                 </tr>
                 <tr>
                     <p>תקציב:</p>
                     <p>נוכחי: @(closeOverdraftOpts[closeOverdraftOpts.Count - 1].monthlyPlannedBudget)</p>
                     <p>עתידי: @(closeOverdraftOpts[closeOverdraftOpts.Count - 1].monthlyPlannedBudget + currentGap)</p>
-                </tr>
-              
+                </tr>                        
             </tbody>
         </table>
+        <button @onclick="manageBudgetsToTranfer">העברה</button>
+        <button @onclick="closeOverdraftWindow">אטפל בהמשך</button>
     </div>
 }
  
@@ -127,27 +122,32 @@
     [Parameter]
     public EventCallback<bool> isTransactionOverlayOpen { get; set; }
 
-    TransactionToAdd newTransaction = new TransactionToAdd()
-        {
-            transDate = DateTime.Today // Set the transaction date to today
-        };
-
     private DateTime? selectedDate = DateTime.Today; // Initialize selectedDate to today
 
+    TransactionToAdd newTransaction = new TransactionToAdd()
+    {
+        transDate = DateTime.Today // Set the transaction date to today
+    };
+
     bool splitPayment = false;
-
-    private int selectedNumber = 1; // Default value
-
     public bool overdraftDetected;
-    List<OverBudgetToShow> closeOverdraftOpts = new List<OverBudgetToShow>();
+    private int selectedNumber = 1; // Default value
     double currentGap = 0;
 
+    List<OverBudgetToShow> closeOverdraftOpts = new List<OverBudgetToShow>();
 
 
     OverBudgetToShow chosenSubCategory = new OverBudgetToShow();
     OverBudgetToShow overDraftSubCategory = new OverBudgetToShow();
+    OverDraftBudgetToEdit subCategoryBudgetToUpdate = new OverDraftBudgetToEdit();
 
+    private void HandleChange(ChangeEventArgs e)
+    {
+        var selectedTitle = e.Value.ToString();
+        chosenSubCategory = closeOverdraftOpts.FirstOrDefault(opt => opt.subCategoryTitle == selectedTitle);
+    }
 
+    
 
     public async Task saveAndEndTransactions()
     {
@@ -192,8 +192,36 @@
         }
     }
 
+    public async Task manageBudgetsToTranfer()
+    {
+        List<OverDraftBudgetToEdit> budgetToUpdate = new List<OverDraftBudgetToEdit>();
+
+        budgetToUpdate.Add(new OverDraftBudgetToEdit
+            {
+                id = chosenSubCategory.id,  // ID of chosen subcategory
+                monthlyPlannedBudget = chosenSubCategory.monthlyPlannedBudget - currentGap // Updated budget
+
+            });
+
+
+        budgetToUpdate.Add(new OverDraftBudgetToEdit
+            {
+                id = overDraftSubCategory.id, // ID of the overdraft subcategory
+                monthlyPlannedBudget = overDraftSubCategory.monthlyPlannedBudget + currentGap // Updated budget
+            });
+
+        Console.WriteLine(budgetToUpdate[1].monthlyPlannedBudget);
+        Console.WriteLine(budgetToUpdate[1].id);
+        Console.WriteLine(overDraftSubCategory.id);
+        Console.WriteLine(overDraftSubCategory.monthlyPlannedBudget);
+
+        await updateSubCategoryBudget(budgetToUpdate);
+    }
+
     public async Task checkOverdraft()
     {
+       
+
         var overdraftRes = await Http.GetAsync("api/Transactions/showOverdraft/" + newTransaction.subCategoryID);
         if (overdraftRes.IsSuccessStatusCode)
         {
@@ -201,6 +229,10 @@
             closeOverdraftOpts = await overdraftRes.Content.ReadFromJsonAsync<List<OverBudgetToShow>>();
             currentGap = (closeOverdraftOpts[closeOverdraftOpts.Count - 1].remainingBudget) - (closeOverdraftOpts[closeOverdraftOpts.Count - 1].monthlyPlannedBudget);
 
+            overDraftSubCategory.id = closeOverdraftOpts[closeOverdraftOpts.Count - 1].id;
+            overDraftSubCategory.monthlyPlannedBudget = closeOverdraftOpts[closeOverdraftOpts.Count - 1].monthlyPlannedBudget;
+            chosenSubCategory = closeOverdraftOpts[0];
+            
         }
         else
         {
@@ -208,5 +240,27 @@
         }
     }
 
+    public async Task updateSubCategoryBudget(List<OverDraftBudgetToEdit> budgetsToUpdate)
+    {
 
-}   
+        var budgetToSaveRes = await Http.PostAsJsonAsync("api/Transactions/EditSubCategoriesNewBudgets", budgetsToUpdate);
+        if (budgetToSaveRes.IsSuccessStatusCode)
+        {
+            Console.WriteLine("התקציבים עודכנו בהצלחה :)");
+            overdraftDetected = false;
+            isTransactionOverlayOpen.InvokeAsync(false);
+
+        }
+        else
+        {
+            Console.WriteLine("עדכון התקציבים נכשל");
+        }
+    }
+
+    void closeOverdraftWindow()
+    {
+        overdraftDetected = false;
+        isTransactionOverlayOpen.InvokeAsync(false);
+    }
+
+}
