@@ -81,7 +81,7 @@
     }
             @if (openTransactionOverlay)
             {
-        <AddTransactionComponent subCategoryTitle="@newSubCatTitle" subCategoryIDTOGet="@newSubCatID" isTransactionOverlayOpen="AddTransOverlay"></AddTransactionComponent>
+        <AddTransactionComponent subCategoryTitle="@newSubCatTitle" subCategoryIDTOGet="@newSubCatID" isTransactionOverlayOpen="AddTransOverlay" refreshBudget="(()=>generateRefresh(true))"></AddTransactionComponent>
             }
 </div>
 
@@ -96,6 +96,10 @@
 
     [Parameter]
     public string categoryTitle { get; set; }
+
+
+    [Parameter]
+    public bool doRefresh { get; set; }
 
     public bool isAccordionClick = false;
     public bool isSubCategoryAddOverlayOpen = false;
@@ -214,6 +218,11 @@
     {
         openTransactionOverlay = !openTransactionOverlay;
         isSubCategoryAddOverlayOpen = false;
+    }
+
+    public void generateRefresh(bool refresh)
+    {
+        doRefresh = refresh;
     }
 }
 

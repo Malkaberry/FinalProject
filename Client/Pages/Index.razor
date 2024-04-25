@@ -3,6 +3,7 @@
 @using Programmin2_classroom.Shared.Models.present.toAdd
 @using Programmin2_classroom.Shared.Models.present.toEdit
 @using Programmin2_classroom.Client.Components
+
 @*@using Programmin2_classroom.Shared.Models.past
 @using Programmin2_classroom.Shared.Models.future*@
 @*@using Programmin2_classroom.Client.Components*@
@@ -60,11 +61,14 @@
         foreach (CategoryToShow category in user.categoriesFullList)
         {
 
-            <CategoryComponent Category=category categoryTitle="category.categroyTitle"> </CategoryComponent>
-            
+            <CategoryComponent Category=category categoryTitle="category.categroyTitle" doRefresh="@doRefresh"> </CategoryComponent>
+
         }
 
-
+        @if (doRefresh)
+        {
+            refreshBudgetsOfSubCats(true);
+        }
     }
 
     <div id="bottomNav">
@@ -92,7 +96,7 @@
     private bool isChecked = false;
     string msg = "";
     int userID = 1;
-
+    bool doRefresh = false;
 
     protected override async Task OnInitializedAsync()
     {
@@ -120,17 +124,8 @@
             }
         }
 
-
-       
-
-
-
-
-
-
-
     }
-    
+
     private string GetHebrewMonthName(int monthNumber)
     {
         switch (monthNumber)
@@ -165,14 +160,13 @@
     }
 
 
-
-
-
-
-
-
-
-
-
+    public void refreshBudgetsOfSubCats(bool refreshBudget)
+    {
+        if (refreshBudget)
+        {
+            doRefresh = refreshBudget;
+            Nav.NavigateTo("./",true);
+        }
+    }
 
 }
