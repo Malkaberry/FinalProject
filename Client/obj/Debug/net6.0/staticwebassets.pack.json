@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\Programmin2_classroom.Client.styles.css"
     },
     {
+      "Id": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\wwwroot\\appsettings.Development.json",
+      "PackagePath": "staticwebassets\\appsettings.Development.json"
+    },
+    {
       "Id": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\wwwroot\\css\\app.css",
       "PackagePath": "staticwebassets\\css\\app.css"
     },

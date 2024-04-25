@@ -240,3 +240,6 @@ C:\Users\97258\OneDrive\Desktop\FinalProject_GithubRepository\FinalProject\Serve
 C:\Users\97258\OneDrive\Desktop\FinalProject_GithubRepository\FinalProject\Server\obj\Debug\net6.0\Programmin2_classroom.Server.pdb
 C:\Users\97258\OneDrive\Desktop\FinalProject_GithubRepository\FinalProject\Server\obj\Debug\net6.0\Programmin2_classroom.Server.genruntimeconfig.cache
 C:\Users\97258\OneDrive\Desktop\FinalProject_GithubRepository\FinalProject\Server\obj\Debug\net6.0\ref\Programmin2_classroom.Server.dll
+C:\Users\97258\OneDrive\Desktop\FinalProject_GithubRepository\FinalProject\Server\bin\Debug\net6.0\Microsoft.AspNetCore.Components.Authorization.dll
+C:\Users\97258\OneDrive\Desktop\FinalProject_GithubRepository\FinalProject\Server\bin\Debug\net6.0\Microsoft.AspNetCore.Components.WebAssembly.Authentication.dll
+C:\Users\97258\OneDrive\Desktop\FinalProject_GithubRepository\FinalProject\Server\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll

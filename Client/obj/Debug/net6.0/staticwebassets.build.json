@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "2AuO2fky0Uki1Qj45qYXFtBCzxaPljKrAlEVHLnYwt0=",
+  "Hash": "Nwbbp3UZqOqtcDTfLbOs2CMXCrMZjo79NbTd3ryIOAQ=",
   "Source": "Programmin2_classroom.Client",
   "BasePath": "/",
   "Mode": "Root",
@@ -16,6 +16,23 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "C:\\Users\\97258\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly.authentication\\6.0.29\\staticwebassets\\AuthenticationService.js",
+      "SourceId": "Microsoft.AspNetCore.Components.WebAssembly.Authentication",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\97258\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly.authentication\\6.0.29\\staticwebassets\\",
+      "BasePath": "_content/Microsoft.AspNetCore.Components.WebAssembly.Authentication",
+      "RelativePath": "AuthenticationService.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\97258\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly.authentication\\6.0.29\\staticwebassets\\AuthenticationService.js"
+    },
     {
       "Identity": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\blazor.boot.json",
       "SourceId": "Programmin2_classroom.Client",
@@ -201,7 +218,24 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\97258\\.nuget\\packages\\microsoft.aspnetcore.authorization\\6.0.7\\lib\\net6.0\\Microsoft.AspNetCore.Authorization.dll"
+      "OriginalItemSpec": "C:\\Users\\97258\\.nuget\\packages\\microsoft.aspnetcore.authorization\\6.0.29\\lib\\net6.0\\Microsoft.AspNetCore.Authorization.dll"
+    },
+    {
+      "Identity": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Authorization.dll",
+      "SourceId": "Programmin2_classroom.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Components.Authorization.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\97258\\.nuget\\packages\\microsoft.aspnetcore.components.authorization\\6.0.29\\lib\\net6.0\\Microsoft.AspNetCore.Components.Authorization.dll"
     },
     {
       "Identity": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.dll",
@@ -218,7 +252,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\97258\\.nuget\\packages\\microsoft.aspnetcore.components\\6.0.7\\lib\\net6.0\\Microsoft.AspNetCore.Components.dll"
+      "OriginalItemSpec": "C:\\Users\\97258\\.nuget\\packages\\microsoft.aspnetcore.components\\6.0.29\\lib\\net6.0\\Microsoft.AspNetCore.Components.dll"
     },
     {
       "Identity": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Forms.dll",
@@ -235,7 +269,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\97258\\.nuget\\packages\\microsoft.aspnetcore.components.forms\\6.0.7\\lib\\net6.0\\Microsoft.AspNetCore.Components.Forms.dll"
+      "OriginalItemSpec": "C:\\Users\\97258\\.nuget\\packages\\microsoft.aspnetcore.components.forms\\6.0.29\\lib\\net6.0\\Microsoft.AspNetCore.Components.Forms.dll"
     },
     {
       "Identity": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Web.dll",
@@ -252,7 +286,24 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\97258\\.nuget\\packages\\microsoft.aspnetcore.components.web\\6.0.7\\lib\\net6.0\\Microsoft.AspNetCore.Components.Web.dll"
+      "OriginalItemSpec": "C:\\Users\\97258\\.nuget\\packages\\microsoft.aspnetcore.components.web\\6.0.29\\lib\\net6.0\\Microsoft.AspNetCore.Components.Web.dll"
+    },
+    {
+      "Identity": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.WebAssembly.Authentication.dll",
+      "SourceId": "Programmin2_classroom.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Components.WebAssembly.Authentication.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\97258\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly.authentication\\6.0.29\\lib\\net6.0\\Microsoft.AspNetCore.Components.WebAssembly.Authentication.dll"
     },
     {
       "Identity": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.WebAssembly.dll",
@@ -286,7 +337,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\97258\\.nuget\\packages\\microsoft.aspnetcore.metadata\\6.0.7\\lib\\net6.0\\Microsoft.AspNetCore.Metadata.dll"
+      "OriginalItemSpec": "C:\\Users\\97258\\.nuget\\packages\\microsoft.aspnetcore.metadata\\6.0.29\\lib\\net6.0\\Microsoft.AspNetCore.Metadata.dll"
     },
     {
       "Identity": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.CSharp.dll",
@@ -422,7 +473,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\97258\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\6.0.0\\lib\\net6.0\\Microsoft.Extensions.DependencyInjection.dll"
+      "OriginalItemSpec": "C:\\Users\\97258\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\6.0.1\\lib\\net6.0\\Microsoft.Extensions.DependencyInjection.dll"
     },
     {
       "Identity": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.FileProviders.Abstractions.dll",
@@ -490,7 +541,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\97258\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.1\\lib\\net6.0\\Microsoft.Extensions.Logging.Abstractions.dll"
+      "OriginalItemSpec": "C:\\Users\\97258\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.4\\lib\\net6.0\\Microsoft.Extensions.Logging.Abstractions.dll"
     },
     {
       "Identity": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Logging.dll",
@@ -558,7 +609,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\97258\\.nuget\\packages\\microsoft.jsinterop\\6.0.7\\lib\\net6.0\\Microsoft.JSInterop.dll"
+      "OriginalItemSpec": "C:\\Users\\97258\\.nuget\\packages\\microsoft.jsinterop\\6.0.29\\lib\\net6.0\\Microsoft.JSInterop.dll"
     },
     {
       "Identity": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.JSInterop.WebAssembly.dll",
@@ -3689,23 +3740,6 @@
       "OriginalItemSpec": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Linq.Expressions.dll"
     },
     {
-      "Identity": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\obj\\Debug\\net6.0\\build-gz\\0RZAQDiu.gz",
-      "SourceId": "Programmin2_classroom.Client",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.AspNetCore.Components.Web.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Web.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Web.dll"
-    },
-    {
       "Identity": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\obj\\Debug\\net6.0\\build-gz\\16K18qr8.gz",
       "SourceId": "Programmin2_classroom.Client",
       "SourceType": "Computed",
@@ -3740,23 +3774,6 @@
       "OriginalItemSpec": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.ComponentModel.dll"
     },
     {
-      "Identity": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\obj\\Debug\\net6.0\\build-gz\\23FROBmR.gz",
-      "SourceId": "Programmin2_classroom.Client",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.AspNetCore.Components.Forms.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Forms.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Forms.dll"
-    },
-    {
       "Identity": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\obj\\Debug\\net6.0\\build-gz\\23HF569U.gz",
       "SourceId": "Programmin2_classroom.Client",
       "SourceType": "Computed",
@@ -3772,23 +3789,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\dotnet.wasm"
-    },
-    {
-      "Identity": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\obj\\Debug\\net6.0\\build-gz\\2jd+Ev+b.gz",
-      "SourceId": "Programmin2_classroom.Client",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.Extensions.Logging.Abstractions.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Logging.Abstractions.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Logging.Abstractions.dll"
     },
     {
       "Identity": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\obj\\Debug\\net6.0\\build-gz\\3Bnkqahs.gz",
@@ -3978,6 +3978,23 @@
       "OriginalItemSpec": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Xml.XmlDocument.dll"
     },
     {
+      "Identity": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\obj\\Debug\\net6.0\\build-gz\\55w9Dp8m.gz",
+      "SourceId": "Programmin2_classroom.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Extensions.Logging.Abstractions.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Logging.Abstractions.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Logging.Abstractions.dll"
+    },
+    {
       "Identity": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\obj\\Debug\\net6.0\\build-gz\\61kNNn+X.gz",
       "SourceId": "Programmin2_classroom.Client",
       "SourceType": "Computed",
@@ -4046,6 +4063,23 @@
       "OriginalItemSpec": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Security.Principal.Windows.dll"
     },
     {
+      "Identity": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\obj\\Debug\\net6.0\\build-gz\\73ZgnEv5.gz",
+      "SourceId": "Programmin2_classroom.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Extensions.DependencyInjection.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.DependencyInjection.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.DependencyInjection.dll"
+    },
+    {
       "Identity": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\obj\\Debug\\net6.0\\build-gz\\7AnXgIEM.gz",
       "SourceId": "Programmin2_classroom.Client",
       "SourceType": "Computed",
@@ -4061,6 +4095,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Net.Primitives.dll"
+    },
+    {
+      "Identity": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\obj\\Debug\\net6.0\\build-gz\\7aoNEw9T.gz",
+      "SourceId": "Programmin2_classroom.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Components.Web.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Web.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Web.dll"
     },
     {
       "Identity": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\obj\\Debug\\net6.0\\build-gz\\7x9sQb97.gz",
@@ -4743,23 +4794,6 @@
       "OriginalItemSpec": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Primitives.dll"
     },
     {
-      "Identity": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\obj\\Debug\\net6.0\\build-gz\\Fa6V10j8.gz",
-      "SourceId": "Programmin2_classroom.Client",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.AspNetCore.Components.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.dll"
-    },
-    {
       "Identity": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\obj\\Debug\\net6.0\\build-gz\\g0+yuYno.gz",
       "SourceId": "Programmin2_classroom.Client",
       "SourceType": "Computed",
@@ -4845,23 +4879,6 @@
       "OriginalItemSpec": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Dynamic.Runtime.dll"
     },
     {
-      "Identity": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\obj\\Debug\\net6.0\\build-gz\\GCbvrIgM.gz",
-      "SourceId": "Programmin2_classroom.Client",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.JSInterop.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.JSInterop.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.JSInterop.dll"
-    },
-    {
       "Identity": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\obj\\Debug\\net6.0\\build-gz\\GF52LUEw.gz",
       "SourceId": "Programmin2_classroom.Client",
       "SourceType": "Computed",
@@ -4894,6 +4911,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Programmin2_classroom.Shared.dll"
+    },
+    {
+      "Identity": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\obj\\Debug\\net6.0\\build-gz\\GrvROwW9.gz",
+      "SourceId": "Programmin2_classroom.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Components.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.dll"
     },
     {
       "Identity": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\obj\\Debug\\net6.0\\build-gz\\gV8t8W2n.gz",
@@ -5015,6 +5049,23 @@
       "OriginalItemSpec": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.IO.Pipelines.dll"
     },
     {
+      "Identity": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\obj\\Debug\\net6.0\\build-gz\\HplL2LiF.gz",
+      "SourceId": "Programmin2_classroom.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Metadata.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Metadata.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Metadata.dll"
+    },
+    {
       "Identity": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\obj\\Debug\\net6.0\\build-gz\\I2RpEBH+.gz",
       "SourceId": "Programmin2_classroom.Client",
       "SourceType": "Computed",
@@ -5132,23 +5183,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Runtime.CompilerServices.Unsafe.dll"
-    },
-    {
-      "Identity": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\obj\\Debug\\net6.0\\build-gz\\JMwiVZxj.gz",
-      "SourceId": "Programmin2_classroom.Client",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.AspNetCore.Authorization.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Authorization.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Authorization.dll"
     },
     {
       "Identity": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\obj\\Debug\\net6.0\\build-gz\\jMx7t1jS.gz",
@@ -5302,6 +5336,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Reflection.DispatchProxy.dll"
+    },
+    {
+      "Identity": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\obj\\Debug\\net6.0\\build-gz\\KRexVaOq.gz",
+      "SourceId": "Programmin2_classroom.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Authorization.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Authorization.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Authorization.dll"
     },
     {
       "Identity": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\obj\\Debug\\net6.0\\build-gz\\KXhL+Xvs.gz",
@@ -5899,23 +5950,6 @@
       "OriginalItemSpec": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Security.Cryptography.OpenSsl.dll"
     },
     {
-      "Identity": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\obj\\Debug\\net6.0\\build-gz\\Qjv0vc7m.gz",
-      "SourceId": "Programmin2_classroom.Client",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.AspNetCore.Metadata.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Metadata.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Metadata.dll"
-    },
-    {
       "Identity": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\obj\\Debug\\net6.0\\build-gz\\QlE2oI3J.gz",
       "SourceId": "Programmin2_classroom.Client",
       "SourceType": "Computed",
@@ -6169,6 +6203,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.IO.Compression.Brotli.dll"
+    },
+    {
+      "Identity": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\obj\\Debug\\net6.0\\build-gz\\skkLe6zs.gz",
+      "SourceId": "Programmin2_classroom.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Components.Authorization.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Authorization.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Authorization.dll"
     },
     {
       "Identity": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\obj\\Debug\\net6.0\\build-gz\\SLjklA+y.gz",
@@ -6545,6 +6596,23 @@
       "OriginalItemSpec": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Resources.Writer.dll"
     },
     {
+      "Identity": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\obj\\Debug\\net6.0\\build-gz\\VVSx1tQ8.gz",
+      "SourceId": "Programmin2_classroom.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.JSInterop.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.JSInterop.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.JSInterop.dll"
+    },
+    {
       "Identity": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\obj\\Debug\\net6.0\\build-gz\\VWTteEpF.gz",
       "SourceId": "Programmin2_classroom.Client",
       "SourceType": "Computed",
@@ -6560,6 +6628,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Reflection.TypeExtensions.dll"
+    },
+    {
+      "Identity": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\obj\\Debug\\net6.0\\build-gz\\vYbO8+GC.gz",
+      "SourceId": "Programmin2_classroom.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Components.WebAssembly.Authentication.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.WebAssembly.Authentication.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.WebAssembly.Authentication.dll"
     },
     {
       "Identity": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\obj\\Debug\\net6.0\\build-gz\\W1WD5Bgv.gz",
@@ -6594,23 +6679,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Configuration.FileExtensions.dll"
-    },
-    {
-      "Identity": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\obj\\Debug\\net6.0\\build-gz\\WDshPt+Z.gz",
-      "SourceId": "Programmin2_classroom.Client",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.Extensions.DependencyInjection.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.DependencyInjection.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.DependencyInjection.dll"
     },
     {
       "Identity": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\obj\\Debug\\net6.0\\build-gz\\weiRT+dG.gz",
@@ -6764,6 +6832,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.FileProviders.Abstractions.dll"
+    },
+    {
+      "Identity": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\obj\\Debug\\net6.0\\build-gz\\YXVk++Bz.gz",
+      "SourceId": "Programmin2_classroom.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Components.Forms.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Forms.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Forms.dll"
     },
     {
       "Identity": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\obj\\Debug\\net6.0\\build-gz\\yYQLGVU0.gz",
@@ -6934,6 +7019,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Programmin2_classroom.Client.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\wwwroot\\appsettings.Development.json",
+      "SourceId": "Programmin2_classroom.Client",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "appsettings.Development.json",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "settings",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\appsettings.Development.json"
     },
     {
       "Identity": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\wwwroot\\css\\app.css",
