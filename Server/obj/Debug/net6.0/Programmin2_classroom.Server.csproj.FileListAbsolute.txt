@@ -243,3 +243,10 @@ C:\Users\97258\OneDrive\Desktop\FinalProject_GithubRepository\FinalProject\Serve
 C:\Users\97258\OneDrive\Desktop\FinalProject_GithubRepository\FinalProject\Server\bin\Debug\net6.0\Microsoft.AspNetCore.Components.Authorization.dll
 C:\Users\97258\OneDrive\Desktop\FinalProject_GithubRepository\FinalProject\Server\bin\Debug\net6.0\Microsoft.AspNetCore.Components.WebAssembly.Authentication.dll
 C:\Users\97258\OneDrive\Desktop\FinalProject_GithubRepository\FinalProject\Server\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\97258\OneDrive\Desktop\FinalProject_GithubRepository\FinalProject\Server\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\97258\OneDrive\Desktop\FinalProject_GithubRepository\FinalProject\Server\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\97258\OneDrive\Desktop\FinalProject_GithubRepository\FinalProject\Server\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\97258\OneDrive\Desktop\FinalProject_GithubRepository\FinalProject\Server\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\97258\OneDrive\Desktop\FinalProject_GithubRepository\FinalProject\Server\bin\Debug\net6.0\MySqlConnector.dll
+C:\Users\97258\OneDrive\Desktop\FinalProject_GithubRepository\FinalProject\Server\bin\Debug\net6.0\Pomelo.EntityFrameworkCore.MySql.dll
+C:\Users\97258\OneDrive\Desktop\FinalProject_GithubRepository\FinalProject\Server\bin\Debug\net6.0\System.Diagnostics.DiagnosticSource.dll

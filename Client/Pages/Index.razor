@@ -3,6 +3,10 @@
 @using Programmin2_classroom.Shared.Models.present.toAdd
 @using Programmin2_classroom.Shared.Models.present.toEdit
 @using Programmin2_classroom.Client.Components
+@using Programmin2_classroom.GoogleAuth.Data.Entities;
+@using Microsoft.AspNetCore.Components.Authorization;
+@inject AuthenticationStateProvider AuthStateProvider
+
 
 @*@using Programmin2_classroom.Shared.Models.past
 @using Programmin2_classroom.Shared.Models.future*@
@@ -12,6 +16,8 @@
 @inject NavigationManager Nav
 @inject DateService DateService
 
+<meta name="google-signin-client_id" content="1019975699349-h4jb6mru41g9tobof0f2i4dl96df2bkp.apps.googleusercontent.com">
+<div class="g-signin2" data-onsuccess="onSignIn"></div>
 
 @if(user != null)
 {
@@ -70,7 +76,7 @@
             refreshBudgetsOfSubCats(true);
         }
     }
-
+    <button @onclick="SignInWithGoogle">Sign in with Google</button>
     <div id="bottomNav">
     <button>מבט לעבר</button>
         <button>מבט להווה</button>
@@ -169,4 +175,32 @@
         }
     }
 
+
+    private void SignInWithGoogle()
+    {
+        Nav.NavigateTo("/Authentication/login");
+    }
+
+
+    private async Task SubmitGoogleUserInfo()
+    {
+        User userInfo = new User { EmailAddress = EmailAddress, FirstName = UserName }; //figure out where are we supposed to receive this info
+        var response = await Http.PostAsJsonAsync("api/signin-google", userInfo);
+        if (response.IsSuccessStatusCode)
+        {
+            // Redirect to home page or another appropriate page
+            Nav.NavigateTo("/");
+        }
+        else
+        {
+            // Handle error response
+            // Display error message or take appropriate action
+        }
+    }
+
+    private void onSignIn(googleUser)
+    {
+        var id_token = googleUser.getAuthResponse().id_token;
+        DotNet.invokeMethodAsync('Programmin2_classroom', 'ReceiveGoogleToken', id_token);
+    }
 }

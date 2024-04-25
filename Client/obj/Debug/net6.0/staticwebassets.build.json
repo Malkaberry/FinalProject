@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Nwbbp3UZqOqtcDTfLbOs2CMXCrMZjo79NbTd3ryIOAQ=",
+  "Hash": "njSH3H6o0vQGzDbyNrw8Y0NAstUx5dfONUQjzjuEUXM=",
   "Source": "Programmin2_classroom.Client",
   "BasePath": "/",
   "Mode": "Root",
@@ -355,6 +355,91 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\97258\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\6.0.13\\runtimes\\browser-wasm\\lib\\net6.0\\Microsoft.CSharp.dll"
+    },
+    {
+      "Identity": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.EntityFrameworkCore.Abstractions.dll",
+      "SourceId": "Programmin2_classroom.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.EntityFrameworkCore.Abstractions.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\97258\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.29\\lib\\net6.0\\Microsoft.EntityFrameworkCore.Abstractions.dll"
+    },
+    {
+      "Identity": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.EntityFrameworkCore.dll",
+      "SourceId": "Programmin2_classroom.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.EntityFrameworkCore.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\97258\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.29\\lib\\net6.0\\Microsoft.EntityFrameworkCore.dll"
+    },
+    {
+      "Identity": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.EntityFrameworkCore.Relational.dll",
+      "SourceId": "Programmin2_classroom.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.EntityFrameworkCore.Relational.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\97258\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\6.0.28\\lib\\net6.0\\Microsoft.EntityFrameworkCore.Relational.dll"
+    },
+    {
+      "Identity": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Caching.Abstractions.dll",
+      "SourceId": "Programmin2_classroom.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Extensions.Caching.Abstractions.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\97258\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\6.0.0\\lib\\netstandard2.0\\Microsoft.Extensions.Caching.Abstractions.dll"
+    },
+    {
+      "Identity": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Caching.Memory.dll",
+      "SourceId": "Programmin2_classroom.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Extensions.Caching.Memory.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\97258\\.nuget\\packages\\microsoft.extensions.caching.memory\\6.0.1\\lib\\netstandard2.0\\Microsoft.Extensions.Caching.Memory.dll"
     },
     {
       "Identity": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Configuration.Abstractions.dll",
@@ -714,6 +799,23 @@
       "OriginalItemSpec": "C:\\Users\\97258\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\6.0.13\\runtimes\\browser-wasm\\lib\\net6.0\\mscorlib.dll"
     },
     {
+      "Identity": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\MySqlConnector.dll",
+      "SourceId": "Programmin2_classroom.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/MySqlConnector.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\97258\\.nuget\\packages\\mysqlconnector\\2.1.2\\lib\\net6.0\\MySqlConnector.dll"
+    },
+    {
       "Identity": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\netstandard.dll",
       "SourceId": "Programmin2_classroom.Client",
       "SourceType": "Computed",
@@ -729,6 +831,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\97258\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\6.0.13\\runtimes\\browser-wasm\\lib\\net6.0\\netstandard.dll"
+    },
+    {
+      "Identity": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Pomelo.EntityFrameworkCore.MySql.dll",
+      "SourceId": "Programmin2_classroom.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Pomelo.EntityFrameworkCore.MySql.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\97258\\.nuget\\packages\\pomelo.entityframeworkcore.mysql\\6.0.3\\lib\\net6.0\\Pomelo.EntityFrameworkCore.MySql.dll"
     },
     {
       "Identity": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Programmin2_classroom.Client.dll",
@@ -1170,7 +1289,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\97258\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\6.0.13\\runtimes\\browser-wasm\\lib\\net6.0\\System.Diagnostics.DiagnosticSource.dll"
+      "OriginalItemSpec": "C:\\Users\\97258\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.1\\lib\\net6.0\\System.Diagnostics.DiagnosticSource.dll"
     },
     {
       "Identity": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Diagnostics.FileVersionInfo.dll",
@@ -3740,23 +3859,6 @@
       "OriginalItemSpec": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Linq.Expressions.dll"
     },
     {
-      "Identity": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\obj\\Debug\\net6.0\\build-gz\\16K18qr8.gz",
-      "SourceId": "Programmin2_classroom.Client",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/System.Diagnostics.DiagnosticSource.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Diagnostics.DiagnosticSource.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Diagnostics.DiagnosticSource.dll"
-    },
-    {
       "Identity": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\obj\\Debug\\net6.0\\build-gz\\1deAMfEC.gz",
       "SourceId": "Programmin2_classroom.Client",
       "SourceType": "Computed",
@@ -4063,6 +4165,23 @@
       "OriginalItemSpec": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Security.Principal.Windows.dll"
     },
     {
+      "Identity": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\obj\\Debug\\net6.0\\build-gz\\7+4l6Lya.gz",
+      "SourceId": "Programmin2_classroom.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.EntityFrameworkCore.Relational.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.EntityFrameworkCore.Relational.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.EntityFrameworkCore.Relational.dll"
+    },
+    {
       "Identity": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\obj\\Debug\\net6.0\\build-gz\\73ZgnEv5.gz",
       "SourceId": "Programmin2_classroom.Client",
       "SourceType": "Computed",
@@ -4163,6 +4282,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.dll"
+    },
+    {
+      "Identity": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\obj\\Debug\\net6.0\\build-gz\\9sZ2Odvh.gz",
+      "SourceId": "Programmin2_classroom.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Extensions.Caching.Memory.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Caching.Memory.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Caching.Memory.dll"
     },
     {
       "Identity": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\obj\\Debug\\net6.0\\build-gz\\A3Xr+s+h.gz",
@@ -4981,6 +5117,23 @@
       "OriginalItemSpec": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Globalization.Calendars.dll"
     },
     {
+      "Identity": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\obj\\Debug\\net6.0\\build-gz\\hbIbNpfR.gz",
+      "SourceId": "Programmin2_classroom.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/MySqlConnector.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\MySqlConnector.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\MySqlConnector.dll"
+    },
+    {
       "Identity": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\obj\\Debug\\net6.0\\build-gz\\HD86Zzrb.gz",
       "SourceId": "Programmin2_classroom.Client",
       "SourceType": "Computed",
@@ -5593,6 +5746,23 @@
       "OriginalItemSpec": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.VisualBasic.Core.dll"
     },
     {
+      "Identity": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\obj\\Debug\\net6.0\\build-gz\\NEffAF8g.gz",
+      "SourceId": "Programmin2_classroom.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/System.Diagnostics.DiagnosticSource.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Diagnostics.DiagnosticSource.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Diagnostics.DiagnosticSource.dll"
+    },
+    {
       "Identity": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\obj\\Debug\\net6.0\\build-gz\\ng5Qy8j9.gz",
       "SourceId": "Programmin2_classroom.Client",
       "SourceType": "Computed",
@@ -5644,6 +5814,23 @@
       "OriginalItemSpec": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Private.Xml.dll"
     },
     {
+      "Identity": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\obj\\Debug\\net6.0\\build-gz\\nX+9ovz2.gz",
+      "SourceId": "Programmin2_classroom.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.EntityFrameworkCore.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.EntityFrameworkCore.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.EntityFrameworkCore.dll"
+    },
+    {
       "Identity": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\obj\\Debug\\net6.0\\build-gz\\OcjLvkYM.gz",
       "SourceId": "Programmin2_classroom.Client",
       "SourceType": "Computed",
@@ -5693,6 +5880,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Threading.Timer.dll"
+    },
+    {
+      "Identity": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\obj\\Debug\\net6.0\\build-gz\\OkCxXiMB.gz",
+      "SourceId": "Programmin2_classroom.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Pomelo.EntityFrameworkCore.MySql.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Pomelo.EntityFrameworkCore.MySql.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Pomelo.EntityFrameworkCore.MySql.dll"
     },
     {
       "Identity": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\obj\\Debug\\net6.0\\build-gz\\oKx7NFZQ.gz",
@@ -5914,6 +6118,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Diagnostics.FileVersionInfo.dll"
+    },
+    {
+      "Identity": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\obj\\Debug\\net6.0\\build-gz\\QFdIfEWM.gz",
+      "SourceId": "Programmin2_classroom.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.EntityFrameworkCore.Abstractions.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.EntityFrameworkCore.Abstractions.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.EntityFrameworkCore.Abstractions.dll"
     },
     {
       "Identity": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\obj\\Debug\\net6.0\\build-gz\\qfUbq0dX.gz",
@@ -6815,6 +7036,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Net.WebSockets.dll"
+    },
+    {
+      "Identity": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\obj\\Debug\\net6.0\\build-gz\\yNjxtHZt.gz",
+      "SourceId": "Programmin2_classroom.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Extensions.Caching.Abstractions.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Caching.Abstractions.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Caching.Abstractions.dll"
     },
     {
       "Identity": "C:\\Users\\97258\\OneDrive\\Desktop\\FinalProject_GithubRepository\\FinalProject\\Client\\obj\\Debug\\net6.0\\build-gz\\yPTpqJ6r.gz",

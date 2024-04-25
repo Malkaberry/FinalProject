@@ -1,12 +1,16 @@
 ﻿using Microsoft.AspNetCore.ResponseCompression;
 using TriangleDbRepository;
+using Microsoft.EntityFrameworkCore;
+using Programmin2_classroom.Client.Data;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
 
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
-
+builder.Services.AddDbContext<DbContext>(options =>
+    options.UseMySql(builder.Configuration.GetConnectionString("DefaultConnection"), new MySqlServerVersion(new Version(8, 0, 21))));
 builder.Services.AddScoped<DbRepository>();
 var app = builder.Build();
 
@@ -28,7 +32,8 @@ app.UseBlazorFrameworkFiles();
 app.UseStaticFiles();
 
 app.UseRouting();
-
+app.UseAuthentication();
+app.UseAuthorization();
 
 app.MapRazorPages();
 app.MapControllers();

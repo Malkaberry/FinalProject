@@ -18,6 +18,11 @@
       "Microsoft.AspNetCore.Components.WebAssembly.dll": "sha256-b6LUYmWO9wtQWNeCNXsoKoTXRM3AgcsBqP624DvGAY8=",
       "Microsoft.AspNetCore.Components.WebAssembly.Authentication.dll": "sha256-6KAHSfK3Ct7GRwSUxnQiHUhdf9gTbJbmmQZSMmthAjs=",
       "Microsoft.AspNetCore.Metadata.dll": "sha256-ZU0IOqtWt4BNenM5X\/BR0dz2ZpGMxhS6fWshE7N2FoI=",
+      "Microsoft.EntityFrameworkCore.dll": "sha256-k3c7hJZ52hYH0Yf8AzwYSzBnBhVyEvuXlCWoqg2FROs=",
+      "Microsoft.EntityFrameworkCore.Abstractions.dll": "sha256-WLyP8nTpSvgbLanV1PPCXoHaxpYmg3DKh1+Dyc0Ls+k=",
+      "Microsoft.EntityFrameworkCore.Relational.dll": "sha256-PH2kOPbuQ3a+N4KVs4gUtjxLWvR0R\/wnZx7OAInHdFc=",
+      "Microsoft.Extensions.Caching.Abstractions.dll": "sha256-WLcZIKlgct2nj4hpaBvZXfHorQG9DH9B\/FZ2IKePG2I=",
+      "Microsoft.Extensions.Caching.Memory.dll": "sha256-aOJetx2rPupAGsXg2NCRL5p+\/xdzMyUSbmn24txWfQw=",
       "Microsoft.Extensions.Configuration.dll": "sha256-c8yYhfrOBLEnOBglLTu9peXSbJDwFpuT4UQiXSv28Og=",
       "Microsoft.Extensions.Configuration.Abstractions.dll": "sha256-5Otet+KKVUjNkE\/hqcNWmt75H1K2VNuKPFagpRd6Ces=",
       "Microsoft.Extensions.Configuration.Binder.dll": "sha256-wNKhG3Ovx8jqxbscz2AALlsTLfI6GL2dyDhe63mSsoM=",
@@ -34,6 +39,9 @@
       "Microsoft.Extensions.Primitives.dll": "sha256-jOmoWSfsdQexH\/6QCA56gR1RMEqeix2iDDUBWbpAOQI=",
       "Microsoft.JSInterop.dll": "sha256-3BjlGxg0WjN9r2PSbdqlCJymeCiA0cS5tjaywF2H6a4=",
       "Microsoft.JSInterop.WebAssembly.dll": "sha256-TNVKFxQm+ZgKzHK5rCOcAC9sMNh87Kz6N3h5jS7B\/cg=",
+      "MySqlConnector.dll": "sha256-AxhrRwbIPfdGF5xW2Ukt0GVXrxDFf4CfeS1U2kbiuLY=",
+      "Pomelo.EntityFrameworkCore.MySql.dll": "sha256-n79duedCBdaf\/gI6uC744vY0vnQsQcHz3DYOVjBFRH8=",
+      "System.Diagnostics.DiagnosticSource.dll": "sha256-r77uwcH5emBoVq\/xBNq3S5A8Fmz2UraG6zulO4RSwoA=",
       "System.IO.Pipelines.dll": "sha256-6+E55JXedimdw1c1bDtVg4K7XuWjVWVTifH8QpfzXSY=",
       "Microsoft.CSharp.dll": "sha256-g19VGs7fPjYMcCLlDjFJVrJoJzKFHq4bh4PV+LYyaEI=",
       "Microsoft.VisualBasic.Core.dll": "sha256-FqpPud2z\/vgMi\/KYjGER1Un8wiAPQQ0164VUwRApxVo=",
@@ -61,7 +69,6 @@
       "System.Data.dll": "sha256-Y3WkdCcJKU30\/mEhx+EHy6b7wu1yo8AJ2Lu3DclG4RI=",
       "System.Diagnostics.Contracts.dll": "sha256-e\/rXLO3rbp1eboTP1zTP7oSAINgb5VpF\/W6RhdnODck=",
       "System.Diagnostics.Debug.dll": "sha256-BG1qHnm16Gr\/FrRGhWqL3NlO9BthG\/WEcetnm0SkVwA=",
-      "System.Diagnostics.DiagnosticSource.dll": "sha256-rdKp2FSd\/l\/JLwWFFmQHDjPqWS8SVxAhdLERj4jlEyg=",
       "System.Diagnostics.FileVersionInfo.dll": "sha256-bfl8dingoeFBJ2lnbDQnQHKYu0lIxKBIF+IgHKC4XNw=",
       "System.Diagnostics.Process.dll": "sha256-MU4GXFqAKKnGY6sVeKDzCikrSWFkATm0r3qHvUgJv9o=",
       "System.Diagnostics.StackTrace.dll": "sha256-NE8ONN8COyTrJBn5KaGeyaZKELUI9rA8kFSYLCHCWsc=",
@@ -201,15 +208,15 @@
       "mscorlib.dll": "sha256-KqZqU1imWCwJ9UPDElyoolN8s7Yqhjk67wuOohFN5KA=",
       "netstandard.dll": "sha256-kBK\/QJy7\/skP97jqnvXnOFMrhWS8HZ1bsADFK\/gZkyM=",
       "System.Private.CoreLib.dll": "sha256-3webPuyNUXfAFKY5c1tC\/jBVrjZHelBwvXrr1E9VJuk=",
-      "Programmin2_classroom.Shared.dll": "sha256-OzxyODXP6LPuxuCGN+ODVGsRRXw0WwoDxuZphf\/Vs3c=",
-      "Programmin2_classroom.Client.dll": "sha256-09Ihz72pqp00giTfNsFl4jHifwcr5sQ1mGx9oJII9O8="
+      "Programmin2_classroom.Shared.dll": "sha256-zpgml+WzD9w+ofTX2Ee+LlqgsJUrZVS2ggWo3TBrXR0=",
+      "Programmin2_classroom.Client.dll": "sha256-OxSWLcLZYkD7UMjFQXEds9soU6gvJwIAe9BcACXOue8="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
-      "Programmin2_classroom.Shared.pdb": "sha256-hwGabEkMgc0nacnfy7GgAPBp7CWN92sOJyTTBwFEcDk=",
-      "Programmin2_classroom.Client.pdb": "sha256-r6e3SVMchOC\/28VSTZANI1jkLjJxbvTjYQhv8TEA\/Rs="
+      "Programmin2_classroom.Shared.pdb": "sha256-a7kpItcaiwa5HFGI8jzigLItgMMJD2bsuBG+QReTtBE=",
+      "Programmin2_classroom.Client.pdb": "sha256-u7yZiUc4EATGjANYPLNZBr5rKlH3JcYPzDdb5BglgPA="
     },
     "runtime": {
       "dotnet.6.0.13.hv42anf73r.js": "sha256-X\/515F1HEzgsDZdY8BJjt8YUwrWngHGZkMnpClhsrpY=",
