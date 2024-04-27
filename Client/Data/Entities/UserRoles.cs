@@ -5,8 +5,8 @@ namespace Programmin2_classroom.Client.Data.Entities
     public class UserRoles
     {
         [Key]
-        public int RoleId { get; set; }
-        public int UserId { get; set; }
-        public string Name { get; set; }
+        public int roleID { get; set; }
+        public int userID { get; set; }
+        public string name { get; set; }
     }
 }

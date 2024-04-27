@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Programmin2_classroom.Client.Data.Entities;
 using Programmin2_classroom.GoogleAuth.Data.Entities;
+using Pomelo.EntityFrameworkCore.MySql;
 
 namespace Programmin2_classroom.Client.Data
 {

@@ -182,25 +182,25 @@
     }
 
 
-    private async Task SubmitGoogleUserInfo()
-    {
-        User userInfo = new User { EmailAddress = EmailAddress, FirstName = UserName }; //figure out where are we supposed to receive this info
-        var response = await Http.PostAsJsonAsync("api/signin-google", userInfo);
-        if (response.IsSuccessStatusCode)
-        {
-            // Redirect to home page or another appropriate page
-            Nav.NavigateTo("/");
-        }
-        else
-        {
-            // Handle error response
-            // Display error message or take appropriate action
-        }
-    }
+    //private async Task SubmitGoogleUserInfo()
+    //{
+    //    User userInfo = new User { EmailAddress = EmailAddress, FirstName = UserName }; //figure out where are we supposed to receive this info
+    //    var response = await Http.PostAsJsonAsync("api/signin-google", userInfo);
+    //    if (response.IsSuccessStatusCode)
+    //    {
+    //        // Redirect to home page or another appropriate page
+    //        Nav.NavigateTo("/");
+    //    }
+    //    else
+    //    {
+    //        // Handle error response
+    //        // Display error message or take appropriate action
+    //    }
+    //}
 
-    private void onSignIn(googleUser)
-    {
-        var id_token = googleUser.getAuthResponse().id_token;
-        DotNet.invokeMethodAsync('Programmin2_classroom', 'ReceiveGoogleToken', id_token);
-    }
+    //private void onSignIn(googleUser)
+    //{
+    //    var id_token = googleUser.getAuthResponse().id_token;
+    //    DotNet.invokeMethodAsync('Programmin2_classroom', 'ReceiveGoogleToken', id_token);
+    //}
 }

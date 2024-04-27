@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\buildMultiTargeting\Programmin2_classroom.Client.props" />
-</Project>

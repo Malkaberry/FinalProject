@@ -4,7 +4,9 @@ using Microsoft.EntityFrameworkCore;
 using Programmin2_classroom.Client.Data;
 
 
+
 var builder = WebApplication.CreateBuilder(args);
+
 
 
 builder.Services.AddControllersWithViews();
@@ -38,7 +40,6 @@ app.UseAuthorization();
 app.MapRazorPages();
 app.MapControllers();
 app.MapFallbackToFile("index.html");
-
 
 
 app.Run();

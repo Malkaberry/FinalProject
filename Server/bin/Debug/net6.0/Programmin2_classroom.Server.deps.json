@@ -597,6 +597,7 @@
           "Microsoft.AspNetCore.Components.WebAssembly": "6.0.7",
           "Microsoft.AspNetCore.Components.WebAssembly.Authentication": "6.0.29",
           "Microsoft.EntityFrameworkCore": "6.0.29",
+          "MySql.Data": "6.10.9",
           "Pomelo.EntityFrameworkCore.MySql": "6.0.3",
           "Programmin2_classroom.Shared": "1.0.0"
         },
@@ -609,6 +610,7 @@
           "Dapper": "2.1.35",
           "Microsoft.AspNetCore.Components.WebAssembly.Authentication": "6.0.29",
           "Microsoft.EntityFrameworkCore": "6.0.29",
+          "MySql.Data": "6.10.9",
           "Pomelo.EntityFrameworkCore.MySql": "6.0.3"
         },
         "runtime": {

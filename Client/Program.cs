@@ -4,8 +4,11 @@ using Programmin2_classroom.Client;
 using Microsoft.AspNetCore.Components.WebAssembly.Authentication;
 using Microsoft.Extensions.Configuration;
 using Programmin2_classroom.Client.Data;
+using Microsoft.EntityFrameworkCore;
+
 
 var builder = WebAssemblyHostBuilder.CreateDefault(args);
+
 builder.RootComponents.Add<App>("#app");
 builder.RootComponents.Add<HeadOutlet>("head::after");
 
@@ -13,7 +16,9 @@ builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.
 builder.Services.AddSingleton<DateService>(); // Register your custom service here
 builder.Services.AddOidcAuthentication(options => {
     builder.Configuration.Bind("Local", options.ProviderOptions);
+    options.ProviderOptions.DefaultScopes.Add("email");
 });
+
 
 await builder.Build().RunAsync();
 
